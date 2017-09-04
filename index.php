@@ -78,23 +78,48 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="trainers-sec def-sec">
 	<div class="wrapper">
 		<div class="trainers">
-			<div class="block-title block-title--center h1">Профессиональный тренерский состав</div>
+			<div class="block-title block-title--center h1">
+				<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/trainers-title.php"
+				));?>
+			</div>
 			<div class="trainers__facts">
 				<div class="trainers__fact">
 					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
-					<span>Тренеры готовят профессиональных бойцов R-1</span>
+					<span>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/trainers-fact-1.php"
+						)); ?>
+					</span>
 				</div>
 				<div class="trainers__fact">
 					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
-					<span>Обучено более 600 человек</span>
+					<span>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/trainers-fact-2.php"
+						)); ?>
+					</span>
 				</div>
 				<div class="trainers__fact">
 					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
-					<span>Опыт тренерства всех тренеров в сумме: более 100 лет</span>
+					<span>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/trainers-fact-3.php"
+						)); ?>
+					</span>
 				</div>
 				<div class="trainers__fact">
 					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring-2.png" alt="">
-					<span>Обучено более 600 человек</span>
+					<span>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/trainers-fact-4.php"
+						)); ?>
+					</span>
 				</div>
 			</div><!-- trainers__facts -->
 			<div class="trainers__slider">
@@ -186,29 +211,21 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				<div class="row">
 					<div class="grid-6 grid-phonemini-12">
 						<div class="trainers__about-info">
-							<h3>В нашей команде работают тренеры:</h3>
 							<div class="user-content">
-								<ul>
-									<li>Высоко&shy;квалифицированный тренерский состав:</li>
-									<li>Дипломированные специалисты.</li>
-									<li>В прошлом спортсмены не ниже мастеров спорта</li>
-									<li>Участники боев R-1</li>
-								</ul>
+								<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+									"AREA_FILE_SHOW" => "file",
+									"PATH" => "/includes/trainers-about-info-1.php"
+								)); ?>
 							</div>
 						</div>
 					</div>
 					<div class="grid-6 grid-phonemini-12">
 						<div class="trainers__about-info">
-							<h3>Тренеры имеют такие заслуги как:</h3>
 							<div class="user-content">
-								<ul>
-									<li>Награды от Министерством Российской Федерации по</li>
-									<li>физической культуре и спорта</li>
-									<li>Награды от правительства.</li>
-									<li>Педагогические заслуги</li>
-									<li>Благотворительность</li>
-									<li>Многократные призеры</li>
-								</ul>
+								<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+									"AREA_FILE_SHOW" => "file",
+									"PATH" => "/includes/trainers-about-info-2.php"
+								)); ?>
 							</div>
 						</div>
 					</div>
@@ -260,7 +277,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	<div class="wrapper">
 		<div class="training">
 			<div class="training__items">
-				<div class="block-title h1">Виды <br>тренировок</div>
+				<div class="block-title h1">
+					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/includes/training-items-title-1.php"
+					)); ?>
+				</div>
 				<div class="row">
 					<div class="grid-4 grid-tabvert-6">
 						<a class="training__item" href="#training-item-more" data-fancybox>
@@ -350,7 +372,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 			</div>
 			
 			<div class="training__items">
-				<div class="block-title h1">групповые <br>тренировки</div>
+				<div class="block-title h1">
+					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/includes/training-items-title-2.php"
+					)); ?>
+				</div>
 				<div class="row">
 					<div class="grid-4 grid-tabvert-6">
 						<a class="training__item" href="#training-item-more" data-fancybox>
@@ -424,7 +451,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="students-wins-sec">
 	<div class="wrapper">
 		<div class="students-wins def-sec">
-			<h2 class="h1">Достижения наших учеников</h2>
+			<h2 class="h1">
+				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/students-wins-title.php"
+				)); ?>
+			</h2>
 			<div class="students-wins__slider">
 				<div class="students-wins__slide">
 					<div class="students-wins__slide-info">
@@ -480,7 +512,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="about-facts-sec">
 	<div class="wrapper">
 		<div class="about-facts def-sec">
-			<h2 class="block-title block-title--white h1">Факты о нас</h2>
+			<h2 class="block-title block-title--white h1">
+				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/about-facts-title.php"
+				)); ?>
+			</h2>
 			<div class="about-facts__items">
 				<div class="about-facts__item about-facts__item--big" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-1.jpg')">
 					<span>Большое разнообразие занятий с квалифицированным тренерским составом</span>
@@ -514,7 +551,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="rooms-sec def-sec">
 	<div class="wrapper">
 		<div class="rooms">
-			<h2 class="block-title h1">Высоко&shy;эффективные тренировки в профес&shy;сиональных залах</h2>
+			<h2 class="block-title h1">
+				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/rooms-title.php"
+				)); ?>
+			</h2>
 			<div class="rooms__all-nav">
 				<a href="#" class="active" data-room="joga">Зал йоги</a>
 				<a href="#" data-room="box">Зал бокса</a>
@@ -642,7 +684,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="abonements-sec">
 	<div class="wrapper">
 		<div class="abonements">
-			<h2 class="block-title h1"><span class="red">Абонементы</span> на занятия в&nbsp;нашем клубе</h2>
+			<h2 class="block-title h1">
+				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/abonements-title.php"
+				)); ?>
+			</h2>
 			<div class="abonements__items">
 				<div class="abonements__item row">
 					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12 grid-phone-5 grid-phonemini-12">
@@ -845,8 +892,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 			<div class="pluses__item row row--ng row--center pluses__item--trainer">
 				<div class="pluses__item-info grid-5 grid-tab-7 grid-phone-12">
 					<div class="user-content user-content--white">
-						<h3>Пробное занятие с тренером</h3>
-						<p>Описание что входит в абонемент, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-item-1.php"
+						)); ?>
 					</div>
 					<a href="#free-lesson" class="btn" data-fancybox>Записаться на пробное занятие</a>
 				</div>
@@ -854,8 +903,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 			<div class="pluses__item row row--ng row--center pluses__item--personal">
 				<div class="pluses__item-info grid-5 grid-tab-7 grid-phone-12">
 					<div class="user-content user-content--white">
-						<h3>Персональные тренировки</h3>
-						<p>Описание что входит в абонемент, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-item-2.php"
+						)); ?>
 					</div>
 					<a href="#free-lesson" class="btn" data-fancybox>Записаться на пробное занятие</a>
 				</div>
@@ -863,9 +914,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 			<div class="pluses__item row row--ng row--center pluses__item--result">
 				<div class="pluses__item-info grid-7 grid-phone-12">
 					<div class="user-content user-content--white">
-						<h3>100% гарантия достижения результата</h3>
-						<p class="big-descr">Ученики нашего клуба получают знания и навыки от профессиональных титуллованных тренеров, а также имею преимущество в виде развития профессиональной карьеры!</p>
-						<p>Мы поможем пройти путь от самого начала до получения высоких мировых титулов</p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-item-3.php"
+						)); ?>
 					</div>
 				</div>
 			</div>
@@ -875,8 +927,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-1.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
-						<h4>Для чего нужна индивидуальная тренировка</h4>
-						<p>Президент Всемирной Федерации смешанных ударных единоборств R-1, промоутер профессиональных боев, Бронзовый призер Кубка Мира по кикбоксингу</p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-mini-item-1.php"
+						)); ?>
 					</div>
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
@@ -884,8 +938,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-2.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
-						<h4>Работа с психо&shy;логическими барьерами</h4>
-						<p>Президент Всемирной Федерации смешанных ударных единоборств R-1, промоутер профессиональных боев, Бронзовый призер Кубка Мира по кикбоксингу</p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-mini-item-2.php"
+						)); ?>
 					</div>
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
@@ -893,8 +949,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-3.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
-						<h4>Выезд на соревнования</h4>
-						<p>Президент Всемирной Федерации смешанных ударных единоборств R-1, промоутер профессиональных боев, Бронзовый призер Кубка Мира по кикбоксингу</p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-mini-item-3.php"
+						)); ?>
 					</div>
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
@@ -902,8 +960,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-4.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
-						<h4>Для чего нужен профессионально оборудованный зал?</h4>
-						<p>Президент Всемирной Федерации смешанных ударных единоборств R-1, промоутер профессиональных боев, Бронзовый призер Кубка Мира по кикбоксингу</p>
+						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => "/includes/pluses-mini-item-4.php"
+						)); ?>
 					</div>
 				</div>
 			</div>
@@ -914,7 +974,12 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="partners-sec def-sec">
 	<div class="wrapper">
 		<div class="partners">
-			<div class="block-title h1">Партнеры</div>
+			<div class="block-title h1">
+				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/partners-title.php"
+				)); ?>
+			</div>
 			<div class="partners__items">
 				<div class="partners__item">
 					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-1.png" alt="">
@@ -963,8 +1028,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 			<div class="map__contact">
 				<h3>Как к нам добраться</h3>
 				<div class="user-content user-content--white">
-					<h4>Федерация смешанных ударных единоборств России R-1 Россия, г. Москва,</h4>
-					<p>ул. Новый Арбат, д.15, этаж 22, пом.1, ком.19</p>
+					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/includes/map-contact-adress.php"
+					)); ?>
 				</div>
 				<a href="tel:84951323661" class="map__phone">+7 (495) 132 36 61</a>
 				<div class="map__soc">
@@ -986,10 +1053,20 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	<div class="wrapper">
 		<div class="footer row">
 			<div class="grid-4 grid-phone-3 grid-phonemini-6 footer__info">
-				<p>Все права защищены, <br>2017 «Академия смешанных и ударных единоборств R -1»</p>
+				<p>
+					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/includes/footer-descr.php"
+					)); ?>
+				</p>
 			</div>
 			<div class="grid-2 grid-phone-3 grid-phonemini-6 footer__info">
-				<p>ИНН: 90000000 <br>ОГРН 000000000</p>
+				<p>
+					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/includes/footer-law.php"
+				)); ?>
+				</p>
 			</div>
 			<div class="grid-4 grid-phone-3 grid-phonemini-6 footer__info footer__info--right">
 				<a href="#">Политика конфиденциальности</a>

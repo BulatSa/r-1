@@ -1,0 +1,2 @@
+<h3>Персональные тренировки</h3>
+<p>Описание что входит в абонемент, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
