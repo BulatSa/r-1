@@ -15,11 +15,11 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				</div>
 				<div class="grid-7 grid-tabvert-8 header__nav-wrap">
 					<ul class="header__nav">
-						<li><a href="#">Тренеры</a></li>
-						<li><a href="#">Преимущества</a></li>
-						<li><a href="#">Кейсы</a></li>
-						<li><a href="#">Абонементы</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#trainers" class="scrollto">Тренеры</a></li>
+						<li><a href="#facts" class="scrollto">Преимущества</a></li>
+						<li><a href="#keys" class="scrollto">Кейсы</a></li>
+						<li><a href="#abonements" class="scrollto">Абонементы</a></li>
+						<li><a href="#contact" class="scrollto">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="grid-2 grid-tabvert-3 grid-phone-9">
@@ -75,7 +75,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	</div><!-- wrapper -->
 </section><!-- head-top-sec -->
 
-<section class="trainers-sec def-sec">
+<section class="trainers-sec def-sec" id="trainers">
 	<div class="wrapper">
 		<div class="trainers">
 			<div class="block-title block-title--center h1">
@@ -122,88 +122,64 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					</span>
 				</div>
 			</div><!-- trainers__facts -->
-			<div class="trainers__slider">
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>РУСЛАН СУНОВАРОВ</h4>
-						<span>Тренер по кикбоксингу</span>
-						<p>Бронзовый призер Чемпионата Мира. Промоутер профессиональных боев, был наставником таких бойцов, как: Анатолий Носорев (абсолютный Чемпион мира) Александр Липовой (3-кратный Чемпион мира) Мурад Шарифов (победитель Кубка Мира)</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>РУСТАМ СУНОВАРОВ</h4>
-						<span>Тренер по кикбоксингу</span>
-						<p>Победитель боя R-ONE SELECTION по смешанным ударным единоборствам среди профессионалов. Чемпион Всероссийской спартакиады по кикбоксингу, Серебряный призер Кубка Мира по кикбоксингу</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>МУРАД ШАРИФОВ</h4>
-						<span>Тренер по боксу</span>
-						<p>Мастер спорта по боксу, 3х кратный Чемпион Южного Федерального округа по боксу, Победитель Кубка Мира по кикбоксингу, Чемпион World Association R-ONE по смешанным ударным единоборствам среди профессионалов</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>ЕВГЕНИЙ ЗЕЛЕНСКИЙ</h4>
-						<span>Тренер по боксу</span>
-						<p>Мастер спорта по боксу Тренер чемпиона Мира Бату Хасикова (кик-боксинг) Тренер Али Багаутинова (ММА) Тренер-консультант Рахима Чахкиева (профессиональный бокс). Личные дружеские связи с профессиональным промоутером Вадимом Корниловым и многими ...</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>РУСЛАН СУНОВАРОВ</h4>
-						<span>Тренер по кикбоксингу</span>
-						<p>Бронзовый призер Чемпионата Мира. Промоутер профессиональных боев, был наставником таких бойцов, как: Анатолий Носорев (абсолютный Чемпион мира) Александр Липовой (3-кратный Чемпион мира) Мурад Шарифов (победитель Кубка Мира)</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>РУСТАМ СУНОВАРОВ</h4>
-						<span>Тренер по кикбоксингу</span>
-						<p>Победитель боя R-ONE SELECTION по смешанным ударным единоборствам среди профессионалов. Чемпион Всероссийской спартакиады по кикбоксингу, Серебряный призер Кубка Мира по кикбоксингу</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>МУРАД ШАРИФОВ</h4>
-						<span>Тренер по боксу</span>
-						<p>Мастер спорта по боксу, 3х кратный Чемпион Южного Федерального округа по боксу, Победитель Кубка Мира по кикбоксингу, Чемпион World Association R-ONE по смешанным ударным единоборствам среди профессионалов</p>
-					</div>
-				</div>
-				<div class="trainers__slide">
-					<div class="trainers__slide-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/trainer-man-1.jpg" alt="">
-					</div>
-					<div class="trainers__slide-info">
-						<h4>ЕВГЕНИЙ ЗЕЛЕНСКИЙ</h4>
-						<span>Тренер по боксу</span>
-						<p>Мастер спорта по боксу Тренер чемпиона Мира Бату Хасикова (кик-боксинг) Тренер Али Багаутинова (ММА) Тренер-консультант Рахима Чахкиева (профессиональный бокс). Личные дружеские связи с профессиональным промоутером Вадимом Корниловым и многими ...</p>
-					</div>
-				</div>
-			</div><!-- trainers__slider -->
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"trainers_slider",
+				Array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "N",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array("",""),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "1",
+					"IBLOCK_TYPE" => "site_info",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => ".default",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array("DOLJNOST",""),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "SORT",
+					"SORT_BY2" => "ACTIVE_FROM",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N"
+				)
+			);?>
+			
 			<div class="center-btn trainers__callback">
 				<a href="#free-lesson" class="btn btn--full" data-fancybox>Записаться</a>
 			</div>
@@ -231,44 +207,63 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					</div>
 				</div>
 			</div>
-			<div class="trainers__prizes">
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-				<div class="trainers__prize">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/trainers-prize-1.jpg" alt="">
-				</div>
-			</div>
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"prizes_slider",
+				Array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "N",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array("",""),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "2",
+					"IBLOCK_TYPE" => "site_info",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => ".default",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array("",""),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "SORT",
+					"SORT_BY2" => "ACTIVE_FROM",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N"
+				)
+			);?>
 		</div>
 	</div><!-- wrapper -->
 </section><!-- trainers-sec -->
@@ -284,85 +279,68 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					)); ?>
 				</div>
 				<div class="row">
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">бокс</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">кикбоксинг</p>
-								<p class="training__item-descr">Пришла в зал в 14 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">Грэпплинг</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">тайский Бокс</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">ММА</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">дзюдо</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">Кроссфит</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">Персональные <br> тренировки</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:news.list",
+						"training_items",
+						Array(
+							"ACTIVE_DATE_FORMAT" => "d.m.Y",
+							"ADD_SECTIONS_CHAIN" => "Y",
+							"AJAX_MODE" => "N",
+							"AJAX_OPTION_ADDITIONAL" => "",
+							"AJAX_OPTION_HISTORY" => "N",
+							"AJAX_OPTION_JUMP" => "N",
+							"AJAX_OPTION_STYLE" => "N",
+							"CACHE_FILTER" => "N",
+							"CACHE_GROUPS" => "Y",
+							"CACHE_TIME" => "36000000",
+							"CACHE_TYPE" => "A",
+							"CHECK_DATES" => "Y",
+							"DETAIL_URL" => "",
+							"DISPLAY_BOTTOM_PAGER" => "Y",
+							"DISPLAY_DATE" => "Y",
+							"DISPLAY_NAME" => "Y",
+							"DISPLAY_PICTURE" => "Y",
+							"DISPLAY_PREVIEW_TEXT" => "Y",
+							"DISPLAY_TOP_PAGER" => "N",
+							"FIELD_CODE" => array("",""),
+							"FILTER_NAME" => "",
+							"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+							"IBLOCK_ID" => "5",
+							"IBLOCK_TYPE" => "site_info",
+							"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+							"INCLUDE_SUBSECTIONS" => "Y",
+							"MESSAGE_404" => "",
+							"NEWS_COUNT" => "20",
+							"PAGER_BASE_LINK_ENABLE" => "N",
+							"PAGER_DESC_NUMBERING" => "N",
+							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+							"PAGER_SHOW_ALL" => "N",
+							"PAGER_SHOW_ALWAYS" => "N",
+							"PAGER_TEMPLATE" => ".default",
+							"PAGER_TITLE" => "Новости",
+							"PARENT_SECTION" => "",
+							"PARENT_SECTION_CODE" => "",
+							"PREVIEW_TRUNCATE_LEN" => "",
+							"PROPERTY_CODE" => array("",""),
+							"SET_BROWSER_TITLE" => "N",
+							"SET_LAST_MODIFIED" => "N",
+							"SET_META_DESCRIPTION" => "N",
+							"SET_META_KEYWORDS" => "N",
+							"SET_STATUS_404" => "N",
+							"SET_TITLE" => "N",
+							"SHOW_404" => "N",
+							"SORT_BY1" => "SORT",
+							"SORT_BY2" => "ACTIVE_FROM",
+							"SORT_ORDER1" => "DESC",
+							"SORT_ORDER2" => "ASC",
+							"STRICT_SECTION_CHECK" => "N"
+						)
+					);?>
 					<div class="grid-4 grid-tabvert-6 grid-phone-12">
 						<div class="training__item-cons">
 							<img src="<?=SITE_TEMPLATE_PATH?>/img/bg-training-cons.jpg" alt="">
 							<div class="training__item-cons-info">
-								<p class="training__item-cons-title">Пробное занятие с консультацией тренера</p>
+								<p class="training__item-cons-title">Пробное занятие с&nbsp;консультацией тренера</p>
 								<p class="training__item-cons-descr">Акция действует только 5 дней</p>
 								<a href="#free-lesson" class="btn btn--white btn--full" data-fancybox>Записаться на пробное занятие</a>
 							</div>
@@ -379,43 +357,63 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					)); ?>
 				</div>
 				<div class="row">
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">тайбо</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">стретчинг</p>
-								<p class="training__item-descr">Пришла в зал в 14 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">йога</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
-
-					<div class="grid-4 grid-tabvert-6">
-						<a class="training__item" href="#training-item-more" data-fancybox>
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
-							<div class="training__item-info">
-								<p class="training__item-title">пилатес</p>
-								<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
-							</div>
-						</a>
-					</div>
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:news.list",
+						"training_group_items",
+						Array(
+							"ACTIVE_DATE_FORMAT" => "d.m.Y",
+							"ADD_SECTIONS_CHAIN" => "Y",
+							"AJAX_MODE" => "N",
+							"AJAX_OPTION_ADDITIONAL" => "",
+							"AJAX_OPTION_HISTORY" => "N",
+							"AJAX_OPTION_JUMP" => "N",
+							"AJAX_OPTION_STYLE" => "N",
+							"CACHE_FILTER" => "N",
+							"CACHE_GROUPS" => "Y",
+							"CACHE_TIME" => "36000000",
+							"CACHE_TYPE" => "A",
+							"CHECK_DATES" => "Y",
+							"DETAIL_URL" => "",
+							"DISPLAY_BOTTOM_PAGER" => "Y",
+							"DISPLAY_DATE" => "Y",
+							"DISPLAY_NAME" => "Y",
+							"DISPLAY_PICTURE" => "Y",
+							"DISPLAY_PREVIEW_TEXT" => "Y",
+							"DISPLAY_TOP_PAGER" => "N",
+							"FIELD_CODE" => array("",""),
+							"FILTER_NAME" => "",
+							"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+							"IBLOCK_ID" => "6",
+							"IBLOCK_TYPE" => "site_info",
+							"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+							"INCLUDE_SUBSECTIONS" => "Y",
+							"MESSAGE_404" => "",
+							"NEWS_COUNT" => "20",
+							"PAGER_BASE_LINK_ENABLE" => "N",
+							"PAGER_DESC_NUMBERING" => "N",
+							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+							"PAGER_SHOW_ALL" => "N",
+							"PAGER_SHOW_ALWAYS" => "N",
+							"PAGER_TEMPLATE" => ".default",
+							"PAGER_TITLE" => "Новости",
+							"PARENT_SECTION" => "",
+							"PARENT_SECTION_CODE" => "",
+							"PREVIEW_TRUNCATE_LEN" => "",
+							"PROPERTY_CODE" => array("",""),
+							"SET_BROWSER_TITLE" => "N",
+							"SET_LAST_MODIFIED" => "N",
+							"SET_META_DESCRIPTION" => "N",
+							"SET_META_KEYWORDS" => "N",
+							"SET_STATUS_404" => "N",
+							"SET_TITLE" => "N",
+							"SHOW_404" => "N",
+							"SORT_BY1" => "SORT",
+							"SORT_BY2" => "ACTIVE_FROM",
+							"SORT_ORDER1" => "DESC",
+							"SORT_ORDER2" => "ASC",
+							"STRICT_SECTION_CHECK" => "N"
+						)
+					);?>
 				</div>
 			</div>
 			
@@ -448,7 +446,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	</div><!-- wrapper -->
 </section><!-- training-sec -->
 
-<section class="students-wins-sec">
+<section class="students-wins-sec" id="keys">
 	<div class="wrapper">
 		<div class="students-wins def-sec">
 			<h2 class="h1">
@@ -457,50 +455,71 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					"PATH" => "/includes/students-wins-title.php"
 				)); ?>
 			</h2>
-			<div class="students-wins__slider">
-				<div class="students-wins__slide">
-					<div class="students-wins__slide-info">
-						<div class="students-wins__slide-img">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1.jpg" alt="">
-						</div>
-						<div class="students-wins__slide-text user-content">
-							<b>Александра Сорокина</b>
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p>
-						</div>
-					</div>
-					<div class="students-wins__slide-after">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1-after.jpg" alt="">
-					</div>
-				</div>
-				<div class="students-wins__slide">
-					<div class="students-wins__slide-info">
-						<div class="students-wins__slide-img">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1.jpg" alt="">
-						</div>
-						<div class="students-wins__slide-text user-content">
-							<b>Александра Сорокина</b>
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p>
-						</div>
-					</div>
-					<div class="students-wins__slide-after">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1-after.jpg" alt="">
-					</div>
-				</div>
-				<div class="students-wins__slide">
-					<div class="students-wins__slide-info">
-						<div class="students-wins__slide-img">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1.jpg" alt="">
-						</div>
-						<div class="students-wins__slide-text user-content">
-							<b>Александра Сорокина</b>
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p>
-						</div>
-					</div>
-					<div class="students-wins__slide-after">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/students-wins-girl-1-after.jpg" alt="">
-					</div>
-				</div>
-			</div>
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"students-wins-slider",
+				array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "N",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array(
+						0 => "DETAIL_PICTURE",
+						1 => "",
+					),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "3",
+					"IBLOCK_TYPE" => "site_info",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => ".default",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array(
+						0 => "NAME",
+						1 => "",
+					),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "SORT",
+					"SORT_BY2" => "ACTIVE_FROM",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N",
+					"COMPONENT_TEMPLATE" => "students-wins-slider"
+				),
+				false
+			);?>
 			<div class="students-wins__nav nav-wrap">
 				<a href="#" class="nav-prev"></a>
 				<a href="#" class="nav-next"></a>
@@ -509,7 +528,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	</div><!-- wrapper -->
 </section><!-- students-wins-sec -->
 
-<section class="about-facts-sec">
+<section class="about-facts-sec" id="facts">
 	<div class="wrapper">
 		<div class="about-facts def-sec">
 			<h2 class="block-title block-title--white h1">
@@ -563,7 +582,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				<a href="#" data-room="crossfit">Зал кроссфита</a>
 			</div>
 			<div class="rooms__items">
-				<div class="rooms__item row" id="joga">
+				<div class="rooms__item row active" id="joga">
 					<div class="rooms__slider grid-7 grid-tabvert-12">
 						<div class="rooms__slide">
 							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
@@ -591,7 +610,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 							<form class="ajax-form">
 								<input type="text" class="input-text input-text--half" placeholder="Ваше имя" data-req="true">
 								<input type="text" class="input-text input-text--half" placeholder="Ваш телефон" data-req="true">
-								<button class="btn btn--full">Записаться на пробное занятие</button>
+								<button class="btn btn--full btn--bordered">Записаться на пробное занятие</button>
 								<label class="style-checkbox">
 									<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked="">
 									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
@@ -681,7 +700,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 	</div><!-- wrapper -->
 </section><!-- rooms-sec -->
 
-<section class="abonements-sec">
+<section class="abonements-sec" id="abonements">
 	<div class="wrapper">
 		<div class="abonements">
 			<h2 class="block-title h1">
@@ -980,49 +999,68 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					"PATH" => "/includes/partners-title.php"
 				)); ?>
 			</div>
-			<div class="partners__items">
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-1.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-2.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-3.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-4.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-5.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-6.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-1.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-2.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-3.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-4.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-5.png" alt="">
-				</div>
-				<div class="partners__item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/partners-item-6.png" alt="">
-				</div>
-			</div>
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"partners_items",
+				Array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "N",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array("",""),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "4",
+					"IBLOCK_TYPE" => "site_info",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => ".default",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array("",""),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "SORT",
+					"SORT_BY2" => "ACTIVE_FROM",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N"
+				)
+			);?>
 		</div>
 	</div><!-- wrapper -->
 </section><!-- partners-sec -->
 
-<section class="map-sec">
+<section class="map-sec" id="contact">
 	<div class="wrapper">
 		<div class="map">
 			<div class="map__contact">

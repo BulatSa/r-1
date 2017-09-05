@@ -13,21 +13,22 @@ $(window).on("resize",function(){ // при изменении размеров
 
 $(document).ready(function() {
 
-/**************************************************
-	Прокрутка к секциям с Velocity.js
-	По data-anchor="id"
-***************************************************/
-	$('body a[data-anchor]').click(function (event) {
-		event.preventDefault();
-		elementClick = "#" + $(this).data("anchor");
-		destination = $(elementClick).offset().top;
-		$('html').velocity( "scroll", { duration: 1000, easing: "easeInOutCubic", offset: destination, mobileHA: true });
-		$('body').velocity( "scroll", { duration: 1000, easing: "easeInOutCubic", offset: destination, mobileHA: true });
+/***********************
+ Прокрутка к секциям BEGIN
+ ***********************/
+	var topMenuHeight = $('.header-sec').outerHeight();
+	$(window).on("resize", function(){
+		topMenuHeight = $('.header-sec').outerHeight();
+	})
+	$('.scrollto').on("click", function () {
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top - topMenuHeight;
+		$('html,body').stop().animate({scrollTop:destination}, 1000);
 		return false;
 	});
-/**************************************************
-	End Прокрутка к секциям
-***************************************************/
+/***********************
+ Прокрутка к секциям END
+ ***********************/
 
 
 /**************************************************
@@ -140,6 +141,7 @@ $(document).ready(function() {
 /**************************************************
   End Flickity
 ***************************************************/
+
 
 /**************************************************
   Rooms Tabs
