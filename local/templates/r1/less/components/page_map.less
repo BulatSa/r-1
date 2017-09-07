@@ -1,0 +1,78 @@
+.map-sec {}
+
+.map {
+	position: relative;
+}
+
+.map__contact {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	max-width: 350px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #FFF;
+	background: @red;
+	z-index: 1;
+	@media @tablet {
+		left: 30px;
+		top: 30px;
+	}
+	@media @tabvert {
+		max-width: 320px;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+	@media @phone {
+		position: relative;
+		top: inherit;
+		left: inherit;
+		max-width: 100%;
+		padding-left: 3%;
+		padding-right: 3%;
+		margin-bottom: 5px;
+	}
+	.user-content {
+		padding-top: 10px;
+	}
+}
+
+#googlemap {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	z-index: 0;
+	@media @tablet {
+		height: 500px;
+	}
+	@media @phone {
+		height: 320px;
+	}
+}
+
+.map__phone {
+	display: inline-block;
+	margin-top: 15px;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: @bold;
+	@media @phone {
+		font-size: 20px;
+	}
+}
+
+.map__soc {
+	padding-top: 5px;
+	a {
+		display: inline-block;
+		margin-top: 5px;
+		vertical-align: middle;
+		&:hover {
+			transform: translateY(-4px);
+		}
+	}
+}

@@ -23,7 +23,7 @@ $this->setFrameMode(true);
 			<div class="students-wins__slide">
 				<div class="students-wins__slide-info">
 					<div class="students-wins__slide-img">
-						<img src="<?=$img_prev["src"]?>" alt="<?=$arItem["NAME"]?>">
+						<img data-flickity-lazyload="<?=$img_prev["src"]?>" alt="<?=$arItem["NAME"]?>">
 					</div>
 					<div class="students-wins__slide-text user-content">
 						<b><?=$arItem["NAME"]?></b>
@@ -31,7 +31,7 @@ $this->setFrameMode(true);
 					</div>
 				</div>
 				<div class="students-wins__slide-after">
-					<img src="<?=$img_detail["src"]?>" alt="">
+					<img data-flickity-lazyload="<?=$img_detail["src"]?>" alt="">
 				</div>
 			</div>
 		<?endforeach;?>

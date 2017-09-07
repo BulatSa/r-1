@@ -1,0 +1,128 @@
+.abonements-sec {}
+
+.abonements {}
+
+.abonements__items {
+	padding-top: 50px;
+	@media @tablet {
+		padding-top: 30px;
+	}
+	@media @tabvert {
+		padding-top: 0px;
+	}
+}
+
+.abonements__item {
+	align-items: flex-start;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: url('../img/bg-abonement-item.jpg') no-repeat center center;
+	@media @tablet {
+		margin-bottom: 35px;
+		background-size: contain;
+	}
+	@media @tabvert {
+		margin-bottom: 20px;
+	}
+	@media @phone {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@media @phone-mini {
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+	&:hover {
+		.abonements__item-img img {
+			transform: rotate(0deg) translateY(-10px) translateZ(0);
+			//box-shadow: 0 5px 15px 0 fade(#000, 50%);
+		}
+	}
+}
+
+.abonements__item-img {
+	padding-left: 2%;
+	padding-right: 2%;
+	@media @tabvert {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	@media @phone {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	@media @phone-mini {
+		padding-bottom: 20px;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		transform: rotate(-15deg);
+		transition: all 0.3s ease-in-out;
+		@media @phone-mini {
+			transform: rotate(0) translateZ(0);
+		}
+	}
+}
+
+.abonements__item-benefits {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.abonements__item-benefit {
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 25px;
+	line-height: 1;
+	@media @phone-mini {
+		padding-bottom: 15px;
+	}
+	span {
+		font-size: 30px;
+		font-weight: @bold;
+		@media @tablet {
+			font-size: 28px;
+		}
+		@media @tabvert {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 12px;
+		font-weight: @black;
+		text-transform: uppercase;
+		@media @tabvert {
+			font-size: 10px;
+		}
+	}
+}
+
+.abonements__item-info {
+	.user-content {
+		padding-bottom: 35px;
+		@media @tablet {
+			padding-bottom: 30px;
+		}
+		@media @phone {
+			padding-bottom: 20px;
+		}
+		@media @phone-mini {
+			padding-bottom: 15px;
+		}
+		h3 {
+			text-transform: none;
+		}
+		p {
+			font-size: 14px;
+			font-weight: @bold;
+		}
+	}
+}

@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			<div class="row row--center">
 				<div class="grid-3 grid-tabvert-1 grid-phone-3">
 					<div class="header__logo">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/logo-top.png" alt="">
+						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/logo-top.png" alt="">
 						<span>Академеия cмешанных и ударных единоборств России</span>
 					</div>
 				</div>
@@ -39,25 +39,25 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			<div class="row">
 				<div class="grid-8 grid-phone-12">
 					<div class="head-top__title">
-						<h1>
+						<h1 class="fade-top">
 							<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
 								"AREA_FILE_SHOW" => "file",
 								"PATH" => "/includes/main-title.php"
 							));?>
 						</h1>
-						<span>
+						<span class="fade-top">
 							<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
 								"AREA_FILE_SHOW" => "file",
 								"PATH" => "/includes/main-title-descr.php"
 							));?>
 						</span>
 					</div>
-					<div class="head-top__garant">
+					<div class="head-top__garant fade-top">
 						<span>100%</span>
 						<p><b>гарантия результата</b>Готовим чемпионов мира по боксу, кикбоксингу, мма при усердной работе.
 						</p>
 					</div>
-					<div class="head-top__form">
+					<div class="head-top__form fade-top">
 						<p class="form-title form-title--white">Запишитесь на пробное занятие сейчас</p>
 						<form class="ajax-form">
 							<input type="hidden" name="form_subject" value="Пробное занятие" data-label="Пробное занятие">
@@ -87,7 +87,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			</div>
 			<div class="trainers__facts">
 				<div class="trainers__fact">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
+					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -96,7 +96,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
+					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -105,7 +105,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
+					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -114,7 +114,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
+					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -339,7 +339,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					);?>
 					<div class="grid-4 grid-tabvert-6 grid-phone-12 fade-top">
 						<div class="training__item-cons">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/bg-training-cons.jpg" alt="">
+							<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/bg-training-cons.jpg" alt="">
 							<div class="training__item-cons-info">
 								<p class="training__item-cons-title">Пробное занятие с&nbsp;консультацией тренера</p>
 								<p class="training__item-cons-descr">Акция действует только 5 дней</p>
@@ -422,7 +422,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 		<div class="training__item-more-wrap" id="training-item-more">
 			<div class="training__item-more">
 				<div class="training__item-more-info">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
+					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/training-item-kickbox.jpg" alt="">
 					<div class="training__item-info">
 						<p class="training__item-title">тайский Бокс</p>
 						<p class="training__item-descr">Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. Победительница всероссийских турниров и победительница Кубка мира по кикбоксингу</p> 
@@ -766,7 +766,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			<div class="pluses__mini-list row fade-top">
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
 					<div class="pluses__mini-item-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-1.jpg" alt="">
+						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-1.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -777,7 +777,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
 					<div class="pluses__mini-item-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-2.jpg" alt="">
+						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-2.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -788,7 +788,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
 					<div class="pluses__mini-item-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-3.jpg" alt="">
+						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-3.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -799,7 +799,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				</div>
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
 					<div class="pluses__mini-item-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-4.jpg" alt="">
+						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-4.jpg" alt="">
 					</div>
 					<div class="pluses__mini-item-info">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -897,9 +897,9 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				<a href="tel:84951323661" class="map__phone">+7 (495) 132 36 61</a>
 				<div class="map__soc">
 					<p>Следите за нами</p>
-					<a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-twitter.png" alt=""></a>
-					<a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-fb.png" alt=""></a>
-					<a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-vk.png" alt=""></a>
+					<a href="http://instagram.com/akademiya_r_1" target="_blank"><img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-insta.png" alt=""></a>
+					<a href="https://www.facebook.com/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F-%D0%A1%D0%BC%D0%B5%D1%88%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%83%D0%B4%D0%B0%D1%80%D0%BD%D1%8B%D1%85-%D0%B5%D0%B4%D0%B8%D0%BD%D0%BE%D0%B1%D0%BE%D1%80%D1%81%D1%82%D0%B2-R-ONE-1440008099411286/" target="_blank"><img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-fb.png" alt=""></a>
+					<a href="https://vk.com/club149533141" target="_blank"><img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-soc-vk.png" alt=""></a>
 				</div>
 			</div>
 			<div id="googlemap"></div>

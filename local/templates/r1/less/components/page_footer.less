@@ -1,0 +1,26 @@
+.footer-sec {
+	padding-top: 40px;
+}
+.footer {}
+.footer__info {
+	font-size: 14px;
+	color: #000;
+	line-height: 1.2;
+	padding-bottom: 15px;
+	&--right {
+		text-align: right;
+		@media @phone-mini {
+			text-align: left;
+		}
+	}
+	a {
+		color: #000;
+		border-bottom: 1px dashed #000;
+		&:hover {
+			border-color: @red;
+		}
+		&[target="_blank"] {
+			border-bottom: 1px solid transparent;
+		}
+	}
+}

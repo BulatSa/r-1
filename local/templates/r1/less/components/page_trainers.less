@@ -1,0 +1,269 @@
+.trainers-sec {
+	background: url('../img/bg-trainers.jpg') no-repeat bottom center,#F2F2F2;
+}
+
+.trainers {
+	.block-title {
+		max-width: 80%;
+		margin: 0 auto;
+		@media @tablet {
+			max-width: 100%;
+		}
+	}
+}
+
+.trainers__facts {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.trainers__fact {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	@media @tablet {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	@media @tabvert {
+		width: 50%;
+		padding-bottom: 10px;
+	}
+	@media @phone-mini {
+		width: 100%;
+	}
+	img {
+		flex-shrink: 0;
+		margin-right: -10px;
+		display: block;
+		@media @tablet {
+			margin-right: -15px;
+			width: 40%;
+		}
+		@media @phone-mini {
+			width: 33.33333%;
+		}
+	}
+	span {
+		display: block;
+		color: #000;
+		line-height: 1;
+		font-size: 18px;
+		font-weight: @regular;
+		@media @old-pc {
+			font-size: 16px;
+		}
+		@media @phone {
+			font-size: 14px;
+		}
+	}
+}
+
+.trainers__slider {
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	padding-top: 60px;
+	@media @note {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	@media @tablet {
+		padding-top: 40px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media @phone {
+		padding-top: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@media @phone-mini {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.flickity-prev-next-button {
+		@media @phone {
+			transform: scale(0.8);
+			top: 20%;
+		}
+		&.previous {
+			left: -60px;
+			@media @note {
+				left: 0;
+			}
+		}
+		&.next {
+			right: -60px;
+			@media @note {
+				right: 0;
+			}
+		}
+	}
+}
+
+.trainers__slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	padding-left: 8px;
+	padding-right: 8px;
+	@media @tablet{
+		width: calc(100% / 3);
+	}
+	@media @tabvert{
+		width: 50%;
+	}
+	@media @phone-mini{
+		width: 100%;
+	}
+}
+
+.trainers__slide-img {
+	position: relative;
+	background: #FFF;
+	@media @phone-mini {
+		img {
+			width: 100%;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		background: url('../img/trainer-bottom-mask.png') no-repeat center bottom;
+		background-size: cover;
+	}
+}
+
+.trainers__slide-info {
+	min-height: 280px;
+	height: 100%;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 15px;
+	background: #FFF;
+	@media @phone-mini {
+		min-height: initial;
+	}
+	span {
+		display: inline-block;
+		padding-bottom: 10px;
+		font-size: 18px;
+		color: @red;
+		@media @tablet {
+			font-size: 16px;
+			padding-bottom: 8px;
+		}
+	}
+	.user-content, .user-content p {
+		font-size: 14px;
+	}
+}
+
+.trainers__callback {
+	max-width: 320px;
+	margin: 0 auto;
+}
+.trainers__about {
+	margin-top: 40px;
+	padding-top: 60px;
+	border-top: 1px solid fade(#000, 10%);
+	@media @tablet {
+		margin-top: 35px;
+		padding-top: 40px;
+	}
+	@media @tabvert {
+		padding-top: 35px;
+	}
+	@media @phone {
+		margin-top: 30px;
+		padding-top: 25px;
+	}
+	h3 {
+		width: 60%;
+		@media @note {
+			width: 70%;
+		}
+		@media @tabvert {
+			width: 80%;
+		}
+		@media @phone-mini {
+			width: 100%;
+		}
+	}
+}
+
+.trainers__about-info {
+	padding-right: 15px;
+	@media @phone-mini {
+		padding-bottom: 20px;
+	}
+}
+
+.trainers__prizes {
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: 50px;
+	@media @note {
+		margin-top: 40px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	@media @tablet {
+		margin-top: 30px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media @phone {
+		margin-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.flickity-prev-next-button {
+		@media @phone {
+			transform: scale(0.8) translateY(-50%);
+		}
+		&.previous {
+			left: -60px;
+			@media @note {
+				left: 0;
+			}
+		}
+		&.next {
+			right: -60px;
+			@media @note {
+				right: 0;
+			}
+		}
+	}
+}
+
+.trainers__prize {
+	width: 20%;
+	padding-left: 8px;
+	padding-right: 8px;
+	@media @tabvert {
+		width: 25%;
+	}
+	@media @phone {
+		width: 33.33333%;
+	}
+	@media @phone-mini {
+		width: 50%;
+	}
+	img {
+		display: block;
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@non-touch: ~'screen and (min-width: 1025px)';
+@non-mob: ~'screen and (min-width: 601px)';
+@wrapper: ~'screen and (max-width: 1582px)';
+@pc: ~'screen and (min-width: 1369px)';
+@air: ~'screen and (max-width: 1440px)';
+@note: ~'screen and (max-width: 1368px)';
+@old-pc: ~'screen and (max-width: 1280px)';
+@tablet: ~'screen and (max-width: 1024px)';
+@tablet-mob: ~'screen and (max-width: 860px)';
+@tablet-vert: ~'screen and (max-width: 768px)';
+@tabvert: ~'screen and (max-width: 768px)';
+@phone: ~'screen and (max-width: 740px)';
+@phone-mini: ~'screen and (max-width: 420px)';
+
+.clear {
+	clear: both;
+}
+
+.clearafter {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.custom-placeholder(@color, @font-size) {
+	&::-webkit-input-placeholder {
+		font-family: @ff;
+		font-size: @font-size;
+		color: @color;
+		.trans-stnd();
+	}
+	&::-moz-placeholder {
+		font-family: @ff;
+		font-size: @font-size;
+		color: @color;
+		.trans-stnd();
+	}
+	&:-ms-input-placeholder {
+		font-family: @ff;
+		font-size: @font-size;
+		color: @color;
+		.trans-stnd();
+	}
+}
+
+.trans-stnd(@time: 0.3s) {
+	transition: all @time ease;
+}
+
+.anim-top-down {
+	animation: anim-top-down 2s infinite;
+}
+
+@keyframes anim-top-down {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

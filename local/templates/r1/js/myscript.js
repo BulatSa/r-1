@@ -178,7 +178,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 2,
 				pageDots: false,
 				prevNextButtons: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
@@ -188,7 +188,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 1,
 				pageDots: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
@@ -217,8 +217,20 @@ $(document).ready(function() {
 		return topVisible || bottomVisible;
 	}
 
+	function isVisibleLazy(elem) {
+		var coords = elem.getBoundingClientRect();
+		var windowHeight = document.documentElement.clientHeight * 1.8;
+
+		// верхняя граница elem в пределах видимости 1 экрана ИЛИ нижняя граница видима
+		var topVisible = coords.top > 0 && coords.top < windowHeight;
+		var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+
+		return topVisible || bottomVisible;
+	}
+
 	function showVisible() {
 		var elements = document.querySelectorAll('.fade-top');
+		var elementsLazy = document.querySelectorAll('[data-src]');
 
 		for (var i = 0; i < elements.length; i++) {
 			var element = elements[i];
@@ -228,6 +240,16 @@ $(document).ready(function() {
 					element.setAttribute( 'class', thisClass + ' fade-top--active');
 				}
 				
+			}
+		}
+
+		for (var i = 0; i < elementsLazy.length; i++) {
+			var element = elementsLazy[i];
+			if (isVisibleLazy(element)) {
+				if (!($(element).hasClass('lazy-load--active'))) {
+					var thisSrc = element.getAttribute('data-src');
+					element.setAttribute( 'src', thisSrc);
+				}
 			}
 		}
 	}

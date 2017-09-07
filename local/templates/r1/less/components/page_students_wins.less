@@ -1,0 +1,159 @@
+.students-wins-sec {
+	background: #FFF;
+	overflow: hidden;
+}
+
+.students-wins {
+	position: relative;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	h2 {
+		position: relative;
+		width: 45%;
+		margin-bottom: -105px;
+		z-index: 1;
+		@media @tablet {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.students-wins__slider {}
+
+.students-wins__slide {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-left: 8%;
+	padding-right: 8%;
+	@media @tablet {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	@media @phone {
+		padding-bottom: 50px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media @phone-mini {
+		padding-bottom: 30px;
+	}
+	&.is-selected {
+		.students-wins__slide-text {
+			transition: all 0.5s ease 0.8s;
+			opacity: 1;
+			transform: translateY(0) translateZ(0);
+		}
+		.students-wins__slide-img {
+			transition: all 0.5s ease 0.5s;
+			opacity: 1;
+			transform: translateY(0) translateZ(0);
+		}
+		.students-wins__slide-after {
+			transition: all 0.5s ease 1.2s;
+			opacity: 1;
+			transform: translateX(0) translateZ(0);
+		}
+	}
+}
+
+.students-wins__slide-info {
+	width: 50%;
+	padding-top: 140px;
+	padding-left: 20px;
+	padding-right: 5%;
+	@media @tablet {
+		padding-top: 0;
+	}
+	@media @phone-mini {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+}
+
+.students-wins__slide-img {
+	position: relative;
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(-25px) translateZ(0);
+	transition: all 0.5s ease;
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: url('../img/students-wins-mask.png') no-repeat center center;
+		background-size: cover;
+		z-index: 1;
+	}
+	img {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		z-index: 0;
+	}
+}
+
+.students-wins__slide-text {
+	max-width: 370px;
+	opacity: 0;
+	transform: translateY(25px) translateZ(0);
+	transition: all 0.5s ease;
+}
+
+.students-wins__slide-after {
+	position: relative;
+	width: 50%;
+	padding-bottom: 20px;
+	opacity: 0;
+	transform: translateX(35px) translateZ(0);
+	transition: all 0.5s ease;
+	@media @phone-mini {
+		width: 100%;
+	}
+	&:after {
+		content: "после";
+		position: absolute;
+		bottom: 5px;
+		right: 30px;
+		display: inline-block;
+		padding: 10px 25px;
+		color: #FFF;
+		font-size: 30px;
+		line-height: 1;
+		font-weight: @black;
+		background: url('../img/bg-students-wins-after.png') no-repeat center center;
+		background-size: contain;
+		@media @tablet {
+			font-size: 24px;
+		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		@media @phone {
+			max-height: 300px;
+		}
+	}
+}
+
+.students-wins__nav {
+	position: absolute;
+	bottom: 170px;
+	left: 0;
+	@media @phone {
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

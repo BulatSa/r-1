@@ -20,7 +20,7 @@ $this->setFrameMode(true);
 			?>
 			<div class="grid-4 grid-tabvert-6 fade-top">
 				<a class="training__item" href="#training-item-more" data-fancybox>
-					<img src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/training-item-placeholder.jpg" data-src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
 					<div class="training__item-info">
 						<p class="training__item-title"><?=$arItem["NAME"]?></p>
 						<p class="training__item-descr"><?=$arItem["PREVIEW_TEXT"]?></p>

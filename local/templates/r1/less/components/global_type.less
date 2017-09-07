@@ -1,0 +1,195 @@
+@import '../variables.less'; // Можно удалять, это только для удобства написания кода.
+
+//---------------------------------------------------------
+//  Типографика
+//---------------------------------------------------------
+
+body {
+	font-family: @ff;
+	font-size:   @font-size-body;
+	font-weight: @regular;
+	line-height: @line-height;
+	color:       @text-color;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+	font-family:   @ff;
+	line-height:   @headings__line-height;
+	font-weight:   @headings__font-weight;
+	text-transform: uppercase;
+}
+
+h1, .h1 {
+	font-size: @font-size--h1;
+	line-height: 1.2;
+	padding-bottom: 25px;
+	@media @note {
+		font-size: 38px;
+		padding-bottom: 20px;
+	}
+	@media @tablet-vert {
+		font-size: 36px;
+	}
+	@media @phone {
+		font-size: 22px;
+		padding-bottom: 15px;
+	}
+}
+h2, .h2 {
+	font-size: @font-size--h2;
+	@media @tablet {
+		font-size: 26px;
+	}
+	@media @tablet-vert {
+		font-size: 24px;
+	}
+	@media @phone {
+		font-size: 20px;
+	}
+}
+.h2--center {
+	text-align: center;
+}
+h3, .h3 {
+	padding-bottom: 10px;
+	font-size: @font-size--h3;
+	line-height: 32/26;
+	@media @tablet {
+		font-size: 22px;
+	}
+	@media @tablet-vert {
+		font-size: 20px;
+	}
+	@media @phone {
+		font-size: 18px;
+	}
+}
+h4, .h4 {
+	font-size: @font-size--h4;
+	padding-bottom: 10px;
+	font-weight: @bold;
+	text-transform: none;
+	@media @phone {
+		padding-bottom: 8px;
+		font-size: 16px;
+	}
+}
+h5 {
+	font-size: @font-size--h5;
+	line-height: 20/16;
+	font-weight: @medium;
+}
+h6 { font-size: @font-size--h6; }
+
+a {
+	.trans-stnd();
+	&:hover {
+		//color: @green-light;
+	}
+}
+
+strong {
+	font-weight: @bold;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+.block-title {
+	text-transform: uppercase;
+	&--center {
+		text-align: center;
+	}
+	&--white {
+		color: #FFF;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.red {
+	color: @red;
+}
+
+.user-content {
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: @regular;
+	color: @text-color;
+	@media @tablet {
+		font-size: 16px;
+	}
+	h2, h3, h4 {
+		padding-bottom: 15px;
+		@media @phone {
+			padding-bottom: 10px;
+		}
+	}
+	p {
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-weight: @regular;
+		line-height: 1.4;
+		@media @tablet {
+			font-size: 16px;
+		}
+	}
+	ul {
+		padding-bottom: 4px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+		li {
+			position: relative;
+			padding-left: 10px;
+			padding-bottom: 4px;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.5em;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: #000;
+			}
+		}
+	}
+	ol {
+		list-style-type: decimal;
+		li {
+			margin-left: 20px;
+			padding-left: 10px;
+			padding-bottom: 16px;
+		}
+	}
+	img {
+		margin-bottom: 14px;
+	}
+	p, ul, ol {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	b {
+		font-weight: @bold;
+	}
+	.big-descr {
+		font-size: 24px;
+		line-height: 1;
+		@media @tablet {
+			font-size: 20px;
+		}
+		@media @phone {
+			font-size: 17px;
+		}
+	}
+	&--white {
+		color: #FFF;
+	}
+}

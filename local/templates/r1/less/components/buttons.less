@@ -1,0 +1,104 @@
+@import '../variables.less'; // Можно удалять, это только для удобства написания кода.
+
+
+
+//------------------------------------------------------------------------------
+//  Кнопка
+//------------------------------------------------------------------------------
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-family: @ff;
+	font-size: 20px;
+	font-weight: @bold;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	border: none;
+	cursor: pointer;
+	outline-style: none;
+	background: @red;
+	.trans-stnd();
+	@media @tablet {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		font-size: 18px;
+	}
+	@media @phone {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	&:hover, &:focus {
+		color: @red;
+		background: #fff;
+	}
+	i, span {
+		vertical-align: middle;
+	}
+	&--mini {
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 8px;
+		padding-bottom: 6px;
+		font-size: 12px;
+		@media @tablet {
+			padding-top: 8px;
+			padding-bottom: 6px;
+		}
+		@media @phone {
+			font-size: 11px;
+		}
+	}
+	&--white {
+		color: @red;
+		background: #FFF;
+		&:hover {
+			background: @red;
+			color: #fff;
+		}
+	}
+	&--bordered {
+		border: 2px solid @red;
+	}
+	&--full {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.center-btn {
+	width: 100%;
+	padding-top: 30px;
+	text-align: center;
+	p {
+		max-width: 480px;
+		margin: 0 auto 25px;
+		color: #FFF;
+		@media @tablet {
+			margin-bottom: 20px;
+		}
+		@media @phone {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.btnwrap {
+	&--center {
+		text-align: center;
+	}
+}
+
+.btnwrap-center {
+	text-align: center;
+}

@@ -20,7 +20,7 @@ $this->setFrameMode(true);
 		?>
 		<div class="abonements__item row">
 			<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12 grid-phone-5 grid-phonemini-12">
-				<img src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
+				<img src="" data-src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
 			</div>
 			<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12 grid-phone-7 grid-phonemini-12">
 				<? foreach ($arItem[PROPERTIES][SOSTAV][VALUE] as $key => $arValue) : ?>

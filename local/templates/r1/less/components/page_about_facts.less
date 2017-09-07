@@ -1,0 +1,123 @@
+.about-facts-sec {
+	position: relative;
+	margin-top: 110px;
+	margin-bottom: 110px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: url('../img/bg-about-facts.jpg') no-repeat bottom center;
+	background-size: cover;
+	@media @note {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	@media @tablet {
+		margin-top: 80px;
+		margin-bottom: 80px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@media @tablet-vert {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	@media @phone {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: -85px;
+		left: 0;
+		width: 50%;
+		height: 85px;
+		background: url('../img/about-facts-top-mask.png') no-repeat bottom left;
+		background-size: contain;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -85px;
+		right: 0;
+		width: 50%;
+		height: 85px;
+		background: url('../img/about-facts-top-mask.png') no-repeat bottom left;
+		background-size: contain;
+		transform: rotate(180deg);
+	}
+}
+
+.about-facts {}
+
+.about-facts__items {
+	overflow: hidden;
+}
+
+.about-facts__item {
+	display: flex;
+	align-items: flex-end;
+	float: left;
+	width: 25%;
+	height: 200px;
+	padding-bottom: 25px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	@media @tablet {
+		height: 180px;
+	}
+	@media @phone {
+		width: 50%;
+		height: 150px;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-bottom: 15px;
+	}
+	span {
+		display: block;
+		width: 70%;
+		color: #FFF;
+		font-size: 18px;
+		font-weight: @bold;
+		line-height: 1.2;
+		@media @tablet {
+			width: 100%;
+			font-size: 16px;
+		}
+	}
+	&--big {
+		width: 50%;
+		height: 400px;
+		@media @tablet {
+			height: 360px;
+		}
+		@media @phone {
+			width: 100%;
+			height: 300px;
+		}
+		span {
+			width: 60%;
+			@media @tablet {
+				width: 100%;
+			}
+		}
+	}
+	&--long {
+		width: 50%;
+		@media @phone {
+			width: 100%;
+		}
+		span {
+			width: 60%;
+			@media @tablet {
+				width: 100%;
+			}
+		}
+	}
+}
