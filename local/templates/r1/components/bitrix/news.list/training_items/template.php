@@ -18,7 +18,7 @@ $this->setFrameMode(true);
 			<?
 			$img = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"], array("width" => 413, "height" => 236), BX_RESIZE_IMAGE_EXACT, true);
 			?>
-			<div class="grid-4 grid-tabvert-6">
+			<div class="grid-4 grid-tabvert-6 fade-top">
 				<a class="training__item" href="#training-item-more" data-fancybox>
 					<img src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
 					<div class="training__item-info">

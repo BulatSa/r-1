@@ -4,7 +4,7 @@ function windowSize() {
 	windowHeight = $(window).height();
 }
 
-$(window).on('load', function() {
+$(window).on('ready', function() {
 	windowSize();
 });; // при загрузке
 $(window).on("resize",function(){ // при изменении размеров
@@ -35,26 +35,53 @@ $(document).ready(function() {
   Flickity
 ***************************************************/
 	if ($('.trainers__slider').length) {
-		$('.trainers__slider').flickity({
-			contain: true,
-			imagesLoaded: true,
-			groupCells: true,
-			lazyLoad: true,
-			adaptiveHeight: true,
-			arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
-		});
+		var trainersCount = $('.trainers__slider .trainers__slide').length;
+		if ($(window).width() > 1024 && trainersCount < 5) {
+			$('.trainers__slider').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				prevNextButtons: false,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		} else {
+			$('.trainers__slider').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		}
 	}
 
 	if ($('.trainers__prizes').length) {
-		$('.trainers__prizes').flickity({
-			contain: true,
-			imagesLoaded: true,
-			groupCells: true,
-			lazyLoad: true,
-			pageDots: false,
-			adaptiveHeight: true,
-			arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
-		});
+		var prizesCount = $('.trainers__prizes .trainers__prize').length;
+		if ($(window).width() > 768 && prizesCount < 6) {
+			$('.trainers__prizes').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				pageDots: false,
+				prevNextButtons: false,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		} else {
+			$('.trainers__prizes').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				pageDots: false,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		}
 	}
 
 	if ($('.students-wins__slider').length) {
@@ -64,7 +91,9 @@ $(document).ready(function() {
 			prevNextButtons: false,
 			lazyLoad: true,
 			pageDots: false,
-			adaptiveHeight: true
+			adaptiveHeight: true,
+			selectedAttraction: 0.15,
+			friction: 0.8
 		});
 
 		var studentsWinsFlkty = studentsWinsSlider.data('flickity')
@@ -138,8 +167,74 @@ $(document).ready(function() {
 
 		});
 	}
+
+	if ($('.partners__items').length) {
+		var prizesCount = $('.partners__items .partners__item').length;
+		if ($(window).width() > 768 && prizesCount < 9) {
+			$('.partners__items').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				pageDots: false,
+				prevNextButtons: false,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		} else {
+			$('.partners__items').flickity({
+				contain: true,
+				imagesLoaded: true,
+				groupCells: true,
+				lazyLoad: true,
+				pageDots: false,
+				adaptiveHeight: true,
+				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
+			});
+		}
+	}
 /**************************************************
   End Flickity
+***************************************************/
+
+
+/**************************************************
+	Show Visible Elements
+***************************************************/
+	/**
+		 * Проверяет элемент на попадание в видимую часть экрана.
+		 * Для попадания достаточно, чтобы верхняя или нижняя границы элемента были видны.
+		 */
+	function isVisible(elem) {
+		var coords = elem.getBoundingClientRect();
+		var windowHeight = document.documentElement.clientHeight + 40;
+
+		// верхняя граница elem в пределах видимости ИЛИ нижняя граница видима
+		var topVisible = coords.top > 0 && coords.top < windowHeight;
+		var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+
+		return topVisible || bottomVisible;
+	}
+
+	function showVisible() {
+		var elements = document.querySelectorAll('.fade-top');
+
+		for (var i = 0; i < elements.length; i++) {
+			var element = elements[i];
+			if (isVisible(element)) {
+				if (!($(element).hasClass('fade-top--active'))) {
+					var thisClass = element.getAttribute('class');
+					element.setAttribute( 'class', thisClass + ' fade-top--active');
+				}
+				
+			}
+		}
+	}
+
+	window.onscroll = showVisible;
+	showVisible();
+/**************************************************
+	End Show Visible 
 ***************************************************/
 
 
@@ -151,12 +246,17 @@ $(document).ready(function() {
 			$roomEl.removeClass('active');
 			$('#'+id).addClass('active');
 		}
+		function changeRoomImg(id, $roomEl) {
+			$roomEl.removeClass('active');
+			$('.rooms__big-img[data-room='+id+']').addClass('active');
+		}
 		$('.rooms__all-nav a').on('click',  function(event) {
 			event.preventDefault();
 			var thisRoomId = $(this).data('room');
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
 			changeRoom(thisRoomId, $('.rooms__item'));
+			changeRoomImg(thisRoomId, $('.rooms__big-img'));
 		});
 	}
 /**************************************************
@@ -169,6 +269,19 @@ $(document).ready(function() {
 ***************************************************/
 	$(".training__item[data-fancybox]").fancybox({
 		animationEffect : "zoom",
+		lang : 'ru',
+		i18n : {
+			'ru' : {
+					CLOSE       : 'Закрыть',
+					NEXT        : 'Дальше',
+					PREV        : 'Назад',
+					ERROR       : 'Не удается загрузить. <br/> Попробуйте позднее.',
+					PLAY_START  : 'Начать слайдшоу',
+					PLAY_STOP   : 'Остановить слайдшоу',
+					FULL_SCREEN : 'На весь экран',
+					THUMBS      : 'Превью'
+			}
+		},
 		beforeLoad: function(instance, current) {
 			var $thisLinkSrc = instance.$lastFocus;
 			var $thisItemModal = $('#training-item-more .training__item-more');

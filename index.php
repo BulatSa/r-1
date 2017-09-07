@@ -60,8 +60,9 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					<div class="head-top__form">
 						<p class="form-title form-title--white">Запишитесь на пробное занятие сейчас</p>
 						<form class="ajax-form">
-							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваше имя" data-req="true">
-							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваш телефон" data-req="true">
+							<input type="hidden" name="form_subject" value="Пробное занятие">
+							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваш имя" data-label="Имя">
+							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваш телефон*" data-label="Телефон" data-req="true">
 							<button class="btn btn--full">Записаться на пробное занятие</button>
 							<label class="style-checkbox style-checkbox--white">
 								<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
@@ -113,7 +114,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					</span>
 				</div>
 				<div class="trainers__fact">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring-2.png" alt="">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -336,7 +337,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 							"STRICT_SECTION_CHECK" => "N"
 						)
 					);?>
-					<div class="grid-4 grid-tabvert-6 grid-phone-12">
+					<div class="grid-4 grid-tabvert-6 grid-phone-12 fade-top">
 						<div class="training__item-cons">
 							<img src="<?=SITE_TEMPLATE_PATH?>/img/bg-training-cons.jpg" alt="">
 							<div class="training__item-cons-info">
@@ -430,10 +431,10 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				<div class="training__item-more-form">
 					<p class="form-title">Оставить заявку</p>
 					<form class="ajax-form">
-						<input type="text" class="input-text" placeholder="Ваше имя" data-req="true">
-						<input type="tel" class="input-text" placeholder="Ваш телефон" data-req="true">
+						<input type="text" class="input-text" placeholder="Ваш имя" data-label="Имя">
+						<input type="tel" class="input-text" placeholder="Ваш телефон*" data-label="Телефон" data-req="true">
 						<input type="hidden" value="Заявка на обучение" name="form_subject">
-						<input type="hidden" value="Бокс" name="learn-class">
+						<input type="hidden" value="Бокс" name="learn-class" data-label="Занятие">
 						<button class="btn btn--full">Отправить</button>
 						<label class="style-checkbox">
 							<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
@@ -538,36 +539,36 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				)); ?>
 			</h2>
 			<div class="about-facts__items">
-				<div class="about-facts__item about-facts__item--big" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-1.jpg')">
+				<div class="about-facts__item about-facts__item--big fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-1.jpg')">
 					<span>Большое разнообразие занятий с квалифицированным тренерским составом</span>
 				</div>
-				<div class="about-facts__item about-facts__item--long" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-2.jpg')">
+				<div class="about-facts__item about-facts__item--long fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-2.jpg')">
 					<span>Персональный тренинг</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-3.jpg')">
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-3.jpg')">
 					<span>Высокий уровень сервиса и комфорта</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-4.jpg')">
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-4.jpg')">
 					<span>Ионная вентиляция</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-5.jpg')">
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-5.jpg')">
 					<span>Собственная парковка</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-6.jpg')">
-					<span>VIP предложения</span>
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-6.jpg')">
+					<span>Персональное VIP–обслуживание</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-7.jpg')">
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-7.jpg')">
 					<span>Детская комната</span>
 				</div>
-				<div class="about-facts__item" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-8.jpg')">
-					<span>Удачное расположение</span>
+				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-8.jpg')">
+					<span>5 минут от метро Академическая</span>
 				</div>
 			</div>
 		</div><!-- about-facts -->
 	</div><!-- wrapper -->
 </section><!-- about-facts-sec -->
 
-<section class="rooms-sec def-sec">
+<section class="rooms-sec def-sec-top">
 	<div class="wrapper">
 		<div class="rooms">
 			<h2 class="block-title h1">
@@ -576,131 +577,77 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					"PATH" => "/includes/rooms-title.php"
 				)); ?>
 			</h2>
-			<div class="rooms__all-nav">
-				<a href="#" class="active" data-room="joga">Зал йоги</a>
-				<a href="#" data-room="box">Зал бокса</a>
-				<a href="#" data-room="crossfit">Зал кроссфита</a>
-			</div>
-			<div class="rooms__items">
-				<div class="rooms__item row active" id="joga">
-					<div class="rooms__slider grid-7 grid-tabvert-12">
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-					</div>
-					<div class="rooms__info grid-5 grid-tabvert-12">
-						<div class="rooms__info-nav nav-wrap">
-							<a href="#" class="nav-prev"></a>
-							<a href="#" class="nav-next"></a>
-						</div>
-						<div class="rooms__info-descr user-content">
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. lorem</p>
-						</div>
-						<div class="rooms__info-form">
-							<p class="form-title">Запишитесь на пробное занятие сейчас</p>
-							<form class="ajax-form">
-								<input type="text" class="input-text input-text--half" placeholder="Ваше имя" data-req="true">
-								<input type="text" class="input-text input-text--half" placeholder="Ваш телефон" data-req="true">
-								<button class="btn btn--full btn--bordered">Записаться на пробное занятие</button>
-								<label class="style-checkbox">
-									<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked="">
-									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
-								</label>
-							</form>
-						</div>
-					</div>
-				</div>
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"rooms_items",
+				array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "Y",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_STYLE" => "N",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"DISPLAY_DATE" => "Y",
+					"DISPLAY_NAME" => "Y",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "Y",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array(
+						0 => "DETAIL_PICTURE",
+						1 => "",
+					),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "8",
+					"IBLOCK_TYPE" => "site_info",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+					"INCLUDE_SUBSECTIONS" => "Y",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => ".default",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array(
+						0 => "PHOTOS",
+						1 => "",
+					),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "SORT",
+					"SORT_BY2" => "ACTIVE_FROM",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N",
+					"COMPONENT_TEMPLATE" => "students-wins-slider"
+				),
+				false
+			);?>
 
-				<div class="rooms__item row" id="box">
-					<div class="rooms__slider grid-7 grid-tabvert-12">
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-					</div>
-					<div class="rooms__info grid-5 grid-tabvert-12">
-						<div class="rooms__info-nav nav-wrap">
-							<a href="#" class="nav-prev"></a>
-							<a href="#" class="nav-next"></a>
-						</div>
-						<div class="rooms__info-descr user-content">
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. lorem</p>
-						</div>
-						<div class="rooms__info-form">
-							<p class="form-title">Запишитесь на пробное занятие сейчас</p>
-							<form class="ajax-form">
-								<input type="text" class="input-text input-text--half" placeholder="Ваше имя" data-req="true">
-								<input type="text" class="input-text input-text--half" placeholder="Ваш телефон" data-req="true">
-								<button class="btn btn--full">Записаться на пробное занятие</button>
-								<label class="style-checkbox">
-									<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked="">
-									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
-								</label>
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="rooms__item row" id="crossfit">
-					<div class="rooms__slider grid-7 grid-tabvert-12">
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-						<div class="rooms__slide">
-							<img src="<?=SITE_TEMPLATE_PATH?>/img/rooms-item-1.jpg" alt="">
-						</div>
-					</div>
-					<div class="rooms__info grid-5 grid-tabvert-12">
-						<div class="rooms__info-nav nav-wrap">
-							<a href="#" class="nav-prev"></a>
-							<a href="#" class="nav-next"></a>
-						</div>
-						<div class="rooms__info-descr user-content">
-							<p>Пришла в зал в 12 лет с подружкой, из любопытства. Уже через 2 месяца начала показывать выдающиеся результаты. lorem</p>
-						</div>
-						<div class="rooms__info-form">
-							<p class="form-title">Запишитесь на пробное занятие сейчас</p>
-							<form class="ajax-form">
-								<input type="text" class="input-text input-text--half" placeholder="Ваше имя" data-req="true">
-								<input type="text" class="input-text input-text--half" placeholder="Ваш телефон" data-req="true">
-								<button class="btn btn--full">Записаться на пробное занятие</button>
-								<label class="style-checkbox">
-									<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked="">
-									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
-								</label>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div><!-- wrapper -->
 </section><!-- rooms-sec -->
 
-<section class="abonements-sec" id="abonements">
+<section class="abonements-sec def-sec-top" id="abonements">
 	<div class="wrapper">
 		<div class="abonements">
 			<h2 class="block-title h1">
@@ -709,197 +656,73 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					"PATH" => "/includes/abonements-title.php"
 				)); ?>
 			</h2>
+
 			<div class="abonements__items">
-				<div class="abonements__item row">
-					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12 grid-phone-5 grid-phonemini-12">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/abonement-item-1.png" alt="">
-					</div>
-					<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12 grid-phone-7 grid-phonemini-12">
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>месяц</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Посещение всех программ по расписанию</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>9</span>
-							<p>занятий</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Свободное посещение клуба</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>Вводный инструктаж</p>
-						</div>
-					</div>
-					<div class="abonements__item-info grid-5 grid-phone-12 grid-phone-12">
-						<div class="user-content">
-							<h3>Black (1 месяц)</h3>
-							<p>В течение месяца Вы можете посещать все занятия по расписанию или тренироваться в клубе самостоятельно в любое удобное для Вас время. Хороший вариант для людей с непредсказуемым графиком. А также для тех, кто хочет попробовать разные курсы тренировок или приехал в Москву ненадолго.</p>
-						</div>
-						<a href="#free-lesson" class="btn btn--full btn--bordered" data-fancybox>Оставить заявку</a>
-					</div>
-				</div>
-
-				<div class="abonements__item row">
-					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/abonement-item-1.png" alt="">
-					</div>
-					<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12">
-						<div class="abonements__item-benefit">
-							<span>3</span>
-							<p>месяца</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Посещение всех программ по расписанию</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>27</span>
-							<p>занятий</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Свободное посещение клуба</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>Вводный инструктаж</p>
-						</div>
-					</div>
-					<div class="abonements__item-info grid-5 grid-phone-12">
-						<div class="user-content">
-							<h3>Red (3 месяца)</h3>
-							<p>В течение трех месяцев Вы сможете как тренироваться в группах, так и заниматься индивидуально. Хороший вариант для клиентов, которые хотят попробовать несколько программ у различных тренеров или самостоятельно заниматься в клубе в любое удобное время.</p>
-						</div>
-						<a href="#free-lesson" class="btn btn--full btn--bordered" data-fancybox>Оставить заявку</a>
-					</div>
-				</div>
-
-				<div class="abonements__item row">
-					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/abonement-item-1.png" alt="">
-					</div>
-					<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12">
-						<div class="abonements__item-benefit">
-							<span>6</span>
-							<p>месяцев</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Посещение всех программ по расписанию</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>54</span>
-							<p>занятия</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Свободное посещение клуба</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>Вводный инструктаж</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>гостевой визит</p>
-						</div>
-					</div>
-					<div class="abonements__item-info grid-5 grid-phone-12">
-						<div class="user-content">
-							<h3>Silver (Полгода)</h3>
-							<p>В течение полугода Вы сможете тренироваться как в группах, так и заниматься индивидуально. Карта подходит для клиентов, которые хотят заниматься у различных тренеров или самостоятельно в любое удобное время.</p>
-						</div>
-						<a href="#free-lesson" class="btn btn--full btn--bordered" data-fancybox>Оставить заявку</a>
-					</div>
-				</div>
-
-				<div class="abonements__item row">
-					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/abonement-item-1.png" alt="">
-					</div>
-					<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12">
-						<div class="abonements__item-benefit">
-							<span>12</span>
-							<p>месяцев</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Посещение всех программ по расписанию</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>108</span>
-							<p>занятий</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Свободное посещение клуба</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>Вводный инструктаж</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>3</span>
-							<p>гостевых визит</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>30</span>
-							<p>дней заморозки</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>1</span>
-							<p>персональная тренировка с тренером</p>
-						</div>
-					</div>
-					<div class="abonements__item-info grid-5 grid-phone-12">
-						<div class="user-content">
-							<h3>Gold (годовая)</h3>
-							<p>В течении года Вы сможете тренироваться, как в группах с тренерами, так и индивидуально. Приобретая карту gold, клиент совершает выгодную покупку,т.к экономит свои денежные средства и получает дополнительные привилегии.</p>
-						</div>
-						<a href="#free-lesson" class="btn btn--full btn--bordered" data-fancybox>Оставить заявку</a>
-					</div>
-				</div>
-
-				<div class="abonements__item row">
-					<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/abonement-item-1.png" alt="">
-					</div>
-					<div class="abonements__item-benefits grid-3 grid-tab-4 grid-phone-7 grid-phonemini-12">
-						<div class="abonements__item-benefit">
-							<span>12</span>
-							<p>месяцев</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Посещение всех программ по расписанию</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>108</span>
-							<p>занятий</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Свободное посещение клуба</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>100</span>
-							<p>персональных тренировок</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Личный шкафчик и полотенце и тапочки</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<span>60</span>
-							<p>дней заморозки</p>
-						</div>
-						<div class="abonements__item-benefit">
-							<p>Личное парковочное место</p>
-						</div>
-					</div>
-					<div class="abonements__item-info grid-5 grid-phone-12">
-						<div class="user-content">
-							<h3>Platinum (вип-карта)</h3>
-							<p>Годовая карта, предназначенная для клиентов, которые высоко ценят свое время и хотят заниматься индивидуально. Приобретая карту PLATINUM, клиент получает массу привилегий и может совместно с тренером составить вой индивидуальный график занятий.</p>
-						</div>
-						<a href="#free-lesson" class="btn btn--full btn--bordered" data-fancybox>Оставить заявку</a>
-					</div>
-				</div>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:news.list",
+					"abonement_items",
+					array(
+						"ACTIVE_DATE_FORMAT" => "d.m.Y",
+						"ADD_SECTIONS_CHAIN" => "Y",
+						"AJAX_MODE" => "N",
+						"AJAX_OPTION_ADDITIONAL" => "",
+						"AJAX_OPTION_HISTORY" => "N",
+						"AJAX_OPTION_JUMP" => "N",
+						"AJAX_OPTION_STYLE" => "N",
+						"CACHE_FILTER" => "N",
+						"CACHE_GROUPS" => "Y",
+						"CACHE_TIME" => "36000000",
+						"CACHE_TYPE" => "A",
+						"CHECK_DATES" => "Y",
+						"DETAIL_URL" => "",
+						"DISPLAY_BOTTOM_PAGER" => "Y",
+						"DISPLAY_DATE" => "Y",
+						"DISPLAY_NAME" => "Y",
+						"DISPLAY_PICTURE" => "Y",
+						"DISPLAY_PREVIEW_TEXT" => "Y",
+						"DISPLAY_TOP_PAGER" => "N",
+						"FIELD_CODE" => array(
+							0 => "DETAIL_PICTURE",
+							1 => "",
+						),
+						"FILTER_NAME" => "",
+						"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+						"IBLOCK_ID" => "7",
+						"IBLOCK_TYPE" => "site_info",
+						"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+						"INCLUDE_SUBSECTIONS" => "Y",
+						"MESSAGE_404" => "",
+						"NEWS_COUNT" => "20",
+						"PAGER_BASE_LINK_ENABLE" => "N",
+						"PAGER_DESC_NUMBERING" => "N",
+						"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+						"PAGER_SHOW_ALL" => "N",
+						"PAGER_SHOW_ALWAYS" => "N",
+						"PAGER_TEMPLATE" => ".default",
+						"PAGER_TITLE" => "Новости",
+						"PARENT_SECTION" => "",
+						"PARENT_SECTION_CODE" => "",
+						"PREVIEW_TRUNCATE_LEN" => "",
+						"PROPERTY_CODE" => array(
+							0 => "NAME",
+							1 => "",
+						),
+						"SET_BROWSER_TITLE" => "N",
+						"SET_LAST_MODIFIED" => "N",
+						"SET_META_DESCRIPTION" => "N",
+						"SET_META_KEYWORDS" => "N",
+						"SET_STATUS_404" => "N",
+						"SET_TITLE" => "N",
+						"SHOW_404" => "N",
+						"SORT_BY1" => "SORT",
+						"SORT_BY2" => "ACTIVE_FROM",
+						"SORT_ORDER1" => "ASC",
+						"SORT_ORDER2" => "DESC",
+						"STRICT_SECTION_CHECK" => "N",
+						"COMPONENT_TEMPLATE" => "students-wins-slider"
+					),
+					false
+				);?>
 			</div>
 		</div>
 	</div><!-- wrapper -->
@@ -908,7 +731,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 <section class="pluses-sec">
 	<div class="wrapper">
 		<div class="pluses">
-			<div class="pluses__item row row--ng row--center pluses__item--trainer">
+			<div class="pluses__item row row--ng row--center pluses__item--trainer fade-top">
 				<div class="pluses__item-info grid-5 grid-tab-7 grid-phone-12">
 					<div class="user-content user-content--white">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -919,7 +742,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					<a href="#free-lesson" class="btn" data-fancybox>Записаться на пробное занятие</a>
 				</div>
 			</div>
-			<div class="pluses__item row row--ng row--center pluses__item--personal">
+			<div class="pluses__item row row--ng row--center pluses__item--personal fade-top">
 				<div class="pluses__item-info grid-5 grid-tab-7 grid-phone-12">
 					<div class="user-content user-content--white">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -930,7 +753,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					<a href="#free-lesson" class="btn" data-fancybox>Записаться на пробное занятие</a>
 				</div>
 			</div>
-			<div class="pluses__item row row--ng row--center pluses__item--result">
+			<div class="pluses__item row row--ng row--center pluses__item--result fade-top">
 				<div class="pluses__item-info grid-7 grid-phone-12">
 					<div class="user-content user-content--white">
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -940,7 +763,7 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					</div>
 				</div>
 			</div>
-			<div class="pluses__mini-list row">
+			<div class="pluses__mini-list row fade-top">
 				<div class="pluses__mini-item grid-3 grid-tabvert-6 grid-phonemini-12">
 					<div class="pluses__mini-item-img">
 						<img src="<?=SITE_TEMPLATE_PATH?>/img/pluses-mini-1.jpg" alt="">
