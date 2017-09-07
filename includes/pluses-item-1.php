@@ -1,2 +1,2 @@
 <h3>Пробное занятие с тренером</h3>
-<p>Описание что входит в абонемент, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+<p>Вы узнаете о правилах клуба и тренаженах в залах. Тренер поможет определиться с планом по достижению ваших целей.</p>

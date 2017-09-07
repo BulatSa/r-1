@@ -1,2 +1,2 @@
 <h3>Персональные тренировки</h3>
-<p>Описание что входит в абонемент, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+<p>Тренер, работая с вами персонально, смотрит не на «среднего спортсмена», а на ваши реальные показатели. Поэтому, он подбирает программу индивидуально для вас.</p>

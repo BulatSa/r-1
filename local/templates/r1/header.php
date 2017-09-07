@@ -4,6 +4,14 @@
 	<meta charset="UTF-8">
 	<title><?$APPLICATION->ShowTitle()?></title>
 
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
+
 	<!-- og -->
 	<meta property="og:title" content="<?$APPLICATION->ShowTitle()?>">
 	<meta property="og:description" content='<?=$APPLICATION->ShowProperty("description");?>'/>

@@ -21,6 +21,9 @@ $(document).ready(function() {
 		topMenuHeight = $('.header-sec').outerHeight();
 	})
 	$('.scrollto').on("click", function () {
+		if($(this).closest(".header__nav")) {
+			topMenuHeight = $('.header-sec').addClass('.minified').outerHeight();
+		}
 		var elementClick = $(this).attr("href");
 		var destination = $(elementClick).offset().top - topMenuHeight;
 		$('html,body').stop().animate({scrollTop:destination}, 1000);
@@ -178,7 +181,6 @@ $(document).ready(function() {
 				lazyLoad: true,
 				pageDots: false,
 				prevNextButtons: false,
-				adaptiveHeight: true,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		} else {
@@ -188,7 +190,6 @@ $(document).ready(function() {
 				groupCells: true,
 				lazyLoad: true,
 				pageDots: false,
-				adaptiveHeight: true,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		}
@@ -236,6 +237,26 @@ $(document).ready(function() {
 /**************************************************
 	End Show Visible 
 ***************************************************/
+
+var topMenu = $('.header-sec');
+var topMenuHeight = topMenu.outerHeight();
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() > topMenuHeight*1.5) {
+		topMenu.addClass('minified');
+	} else {
+		topMenu.removeClass('minified');
+	}
+})
+
+
+/**************************************************
+ Masked Input
+ ***************************************************/
+	$("input[type='tel']").mask("+7 (999) 999-99-99", {autoclear: false});
+/**************************************************
+ Masked Input
+ ***************************************************/
 
 
 /**************************************************
@@ -333,8 +354,8 @@ $(document).ready(function() {
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(55.683998, 37.578309),
 					map: map,
-					title: 'г. Москва, ул. Новый Арбат, д.15, этаж 22, пом.1, ком.19',
-					icon: '/img/map-bubble.png'
+					title: 'г. Москва, ул. Дмитрия Ульянова 30 к2',
+					icon: '/local/templates/r1/img/map-bubble.png'
 				});
 			}
 		});
@@ -381,7 +402,7 @@ $(document).ready(function() {
 			var input_name = $(this).attr('name');
 			var input_label__name = input_name + '_label';
 			var input_label__value = $(this).data('label');
-			form_data.append(input_label__name,input_label__value)
+			form_data.append(input_label__name,input_label__value);
 		});
 
 		btn = $(this).find('.btn');
@@ -394,12 +415,14 @@ $(document).ready(function() {
 				cache: false,
 				contentType: false,
 				processData:false,
-				data: form_data
-			}).success(function(result) {
-				console.log(result);
-				$.fancybox($('#modal-thanks'), {padding: 0});
-				form.find("input[type!='hidden']").val('');
-				setTimeout(function() {$.fancybox.close();},4500);
+				data: form_data,
+				success: (function(result) {
+					console.log(result);
+					$.fancybox.close();
+					$.fancybox.open({src  : '#modal-thanks'});
+					setTimeout(function() {$.fancybox.close();},4500);
+					form[0].reset();
+				})
 			});
 		}
 	});

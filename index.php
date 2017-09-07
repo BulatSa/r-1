@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
+$APPLICATION->SetTitle("Академия смешанных и ударных единоборств России");
 ?>
 
-<section class="header-sec minified">
+<section class="header-sec ">
 	<div class="wrapper">
 		<div class="header">
 			<div class="row row--center">
@@ -60,9 +60,9 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 					<div class="head-top__form">
 						<p class="form-title form-title--white">Запишитесь на пробное занятие сейчас</p>
 						<form class="ajax-form">
-							<input type="hidden" name="form_subject" value="Пробное занятие">
-							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваш имя" data-label="Имя">
-							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваш телефон*" data-label="Телефон" data-req="true">
+							<input type="hidden" name="form_subject" value="Пробное занятие" data-label="Пробное занятие">
+							<input type="text" class="input-text input-text--half input-text--white" placeholder="Ваше имя" data-label="Имя" name="Имя">
+							<input type="tel" class="input-text input-text--half input-text--white" placeholder="Ваш телефон*" data-label="Телефон" data-req="true" name="Телефон">
 							<button class="btn btn--full">Записаться на пробное занятие</button>
 							<label class="style-checkbox style-checkbox--white">
 								<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
@@ -431,8 +431,8 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 				<div class="training__item-more-form">
 					<p class="form-title">Оставить заявку</p>
 					<form class="ajax-form">
-						<input type="text" class="input-text" placeholder="Ваш имя" data-label="Имя">
-						<input type="tel" class="input-text" placeholder="Ваш телефон*" data-label="Телефон" data-req="true">
+						<input type="text" class="input-text" placeholder="Ваше имя" data-label="Имя" name="Имя">
+						<input type="tel" class="input-text" placeholder="Ваш телефон*" data-label="Телефон" data-req="true" name="Телефон">
 						<input type="hidden" value="Заявка на обучение" name="form_subject">
 						<input type="hidden" value="Бокс" name="learn-class" data-label="Занятие">
 						<button class="btn btn--full">Отправить</button>
