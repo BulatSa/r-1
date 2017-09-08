@@ -14,7 +14,7 @@ $this->setFrameMode(true);
 ?>
 
 <? if (!empty($arResult["ITEMS"])) : ?>
-	<div class="trainers__prizes">
+	<div class="trainers__prizes fade-top">
 		<div class="trainers__prize">
 			<?foreach($arResult["ITEMS"] as $key => $arItem):?>
 				<?

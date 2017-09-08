@@ -154,6 +154,9 @@ section, header, footer {
 	opacity: 0;
 	transform: translateY(30px) translateZ(0);
 	transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+	@media @tablet {
+		transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;
+	}
 	&--active {
 		opacity: 1;
 		transform: translateY(0px) translateZ(0);
@@ -215,8 +218,11 @@ section, header, footer {
 
 .flickity-page-dots .dot {
 	margin: 0 5px;
-	background: #FFF;
 	.trans-stnd();
+}
+
+.flickity-page-dots .dot.is-selected {
+	background: @red;
 }
 
 .nav-wrap {
@@ -263,10 +269,6 @@ section, header, footer {
 	&.ended {
 		pointer-events: none;
 	}
-}
-
-.flickity-page-dots .dot.is-selected {
-	background: @red;
 }
 
 [data-fancybox] {

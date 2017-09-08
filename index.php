@@ -66,7 +66,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 							<button class="btn btn--full">Записаться на пробное занятие</button>
 							<label class="style-checkbox style-checkbox--white">
 								<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
-								<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
+								<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="/politics.rtf" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
 							</label>
 						</form>
 					</div>
@@ -79,14 +79,14 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 <section class="trainers-sec def-sec" id="trainers">
 	<div class="wrapper">
 		<div class="trainers">
-			<div class="block-title block-title--center h1">
+			<div class="block-title block-title--center h1 fade-top">
 				<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
 					"AREA_FILE_SHOW" => "file",
 					"PATH" => "/includes/trainers-title.php"
 				));?>
 			</div>
 			<div class="trainers__facts">
-				<div class="trainers__fact">
+				<div class="trainers__fact fade-top">
 					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -95,7 +95,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						)); ?>
 					</span>
 				</div>
-				<div class="trainers__fact">
+				<div class="trainers__fact fade-top">
 					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -104,7 +104,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						)); ?>
 					</span>
 				</div>
-				<div class="trainers__fact">
+				<div class="trainers__fact fade-top">
 					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -113,7 +113,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						)); ?>
 					</span>
 				</div>
-				<div class="trainers__fact">
+				<div class="trainers__fact fade-top">
 					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
@@ -181,13 +181,13 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				)
 			);?>
 			
-			<div class="center-btn trainers__callback">
+			<div class="center-btn trainers__callback fade-top">
 				<a href="#free-lesson" class="btn btn--full" data-fancybox>Записаться</a>
 			</div>
 			<div class="trainers__about">
 				<div class="row">
 					<div class="grid-6 grid-phonemini-12">
-						<div class="trainers__about-info">
+						<div class="trainers__about-info fade-top">
 							<div class="user-content">
 								<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 									"AREA_FILE_SHOW" => "file",
@@ -197,7 +197,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						</div>
 					</div>
 					<div class="grid-6 grid-phonemini-12">
-						<div class="trainers__about-info">
+						<div class="trainers__about-info fade-top">
 							<div class="user-content">
 								<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 									"AREA_FILE_SHOW" => "file",
@@ -273,7 +273,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 	<div class="wrapper">
 		<div class="training">
 			<div class="training__items">
-				<div class="block-title h1">
+				<div class="block-title h1 fade-top">
 					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 						"AREA_FILE_SHOW" => "file",
 						"PATH" => "/includes/training-items-title-1.php"
@@ -351,7 +351,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			</div>
 			
 			<div class="training__items">
-				<div class="block-title h1">
+				<div class="block-title h1 fade-top">
 					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 						"AREA_FILE_SHOW" => "file",
 						"PATH" => "/includes/training-items-title-2.php"
@@ -438,7 +438,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						<button class="btn btn--full">Отправить</button>
 						<label class="style-checkbox">
 							<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
-							<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
+							<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="/politics.rtf" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
 						</label>
 					</form>
 				</div>
@@ -450,7 +450,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 <section class="students-wins-sec" id="keys">
 	<div class="wrapper">
 		<div class="students-wins def-sec">
-			<h2 class="h1">
+			<h2 class="h1 fade-top">
 				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 					"AREA_FILE_SHOW" => "file",
 					"PATH" => "/includes/students-wins-title.php"
@@ -532,7 +532,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 <section class="about-facts-sec" id="facts">
 	<div class="wrapper">
 		<div class="about-facts def-sec">
-			<h2 class="block-title block-title--white h1">
+			<h2 class="block-title block-title--white h1 fade-top">
 				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 					"AREA_FILE_SHOW" => "file",
 					"PATH" => "/includes/about-facts-title.php"
@@ -571,7 +571,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 <section class="rooms-sec def-sec-top">
 	<div class="wrapper">
 		<div class="rooms">
-			<h2 class="block-title h1">
+			<h2 class="block-title h1 fade-top">
 				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 					"AREA_FILE_SHOW" => "file",
 					"PATH" => "/includes/rooms-title.php"
@@ -650,7 +650,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 <section class="abonements-sec def-sec-top" id="abonements">
 	<div class="wrapper">
 		<div class="abonements">
-			<h2 class="block-title h1">
+			<h2 class="block-title h1 fade-top">
 				<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 					"AREA_FILE_SHOW" => "file",
 					"PATH" => "/includes/abonements-title.php"
@@ -813,7 +813,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 	</div><!-- wrapper -->
 </section><!-- pluses-sec -->
 
-<section class="partners-sec def-sec">
+<section class="partners-sec def-sec fade-top">
 	<div class="wrapper">
 		<div class="partners">
 			<div class="block-title h1">
@@ -883,7 +883,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 	</div><!-- wrapper -->
 </section><!-- partners-sec -->
 
-<section class="map-sec" id="contact">
+<section class="map-sec fade-top" id="contact">
 	<div class="wrapper">
 		<div class="map">
 			<div class="map__contact">
@@ -930,7 +930,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				</p>
 			</div>
 			<div class="grid-4 grid-phone-3 grid-phonemini-6 footer__info footer__info--right">
-				<a href="#">Политика конфиденциальности</a>
+				<a href="/politics.rtf" target="_blank" rel="nofollow">Политика конфиденциальности</a>
 			</div>
 			<div class="grid-2 grid-phone-3 grid-phonemini-6 footer__info footer__info--right">
 				<a href="https://penbrain.ru/" target="_blank">Создано в Pen&Brain</a>
@@ -938,5 +938,16 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 		</div>
 	</div><!-- wrapper -->
 </section><!-- footer-sec -->
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-106137018-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

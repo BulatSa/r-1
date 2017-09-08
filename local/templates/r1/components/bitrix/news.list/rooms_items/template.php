@@ -20,24 +20,24 @@ $this->setFrameMode(true);
 		?>
 
 
-		<div class="rooms__all-nav">
+		<div class="rooms__all-nav fade-top">
 			<? foreach($arResult["ITEMS"] as $key=>$arValue): ?>
 				<a href="#" <?if ($key==0) :?>class="active"<?endif;?>data-room="<?=$arValue["CODE"]?>"><?=$arValue["NAME"]?></a>
 			<? endforeach; ?>
 		</div>
 
-		<div class="rooms__big-imgs">
+		<div class="rooms__big-imgs fade-top">
 			<? foreach($arResult["ITEMS"] as $key=>$arValue): ?>
 				<div class="rooms__big-img <?if ($key==0) :?>active<?endif;?>" data-room="<?=$arValue["CODE"]?>">
 					<?
-						$img = CFile::ResizeImageGet($arValue["PREVIEW_PICTURE"], array("width" => 1192, "height" => 425), BX_RESIZE_IMAGE_EXACT, true);
+						$img = CFile::ResizeImageGet($arValue["PREVIEW_PICTURE"], array("width" => 1192, "height" => 425), BX_RESIZE_IMAGE_PROPORTIONAL, true);
 					?>
 					<img src="<?=$img["src"]?>" alt="">
 				</div>
 			<? endforeach; ?>
 		</div>
 
-		<div class="rooms__items">
+		<div class="rooms__items fade-top">
 			<? foreach($arResult["ITEMS"] as $key=>$arItem): ?>
 
 				<div class="rooms__item row <?if ($key==0) :?>active<?endif;?>" id="<?=$arItem["CODE"]?>">
@@ -68,7 +68,7 @@ $this->setFrameMode(true);
 								<button class="btn btn--full btn--bordered">Записаться на пробное занятие</button>
 								<label class="style-checkbox">
 									<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked="">
-									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
+									<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="/politics.rtf" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
 								</label>
 							</form>
 						</div>

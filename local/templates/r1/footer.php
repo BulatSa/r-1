@@ -8,7 +8,7 @@
 				<button class="btn btn--full">Записаться на пробное занятие</button>
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
-					<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
+					<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="/politics.rtf" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
 				</label>
 			</form>
 		</div>
@@ -24,7 +24,7 @@
 				<button class="btn btn--full">Отправить</button>
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
-					<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="#" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
+					<span class="checkbox-personal">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с <a href="/politics.rtf" target="_blank" rel="nofollow">условиями политики конфиденциальности</a></span>
 				</label>
 			</form>
 		</div>

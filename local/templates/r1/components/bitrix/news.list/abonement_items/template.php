@@ -18,7 +18,7 @@ $this->setFrameMode(true);
 		<?
 		$img = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"], array("width" => 257, "height" => 164), BX_RESIZE_IMAGE_EXACT, true);
 		?>
-		<div class="abonements__item row">
+		<div class="abonements__item row fade-top">
 			<div class="abonements__item-img grid-4 grid-tab-3 grid-phone-5 grid-phonemini-12 grid-phone-5 grid-phonemini-12">
 				<img src="" data-src="<?=$img["src"]?>" alt="<?=$arItem["NAME"]?>">
 			</div>

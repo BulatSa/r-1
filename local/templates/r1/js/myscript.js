@@ -44,7 +44,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 2,
 				prevNextButtons: false,
 				adaptiveHeight: true,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
@@ -54,7 +54,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 2,
 				adaptiveHeight: true,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 2,
 				pageDots: false,
 				prevNextButtons: false,
 				adaptiveHeight: true,
@@ -79,7 +79,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: true,
+				lazyLoad: 2,
 				pageDots: false,
 				adaptiveHeight: true,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
@@ -92,7 +92,7 @@ $(document).ready(function() {
 			contain: true,
 			imagesLoaded: true,
 			prevNextButtons: false,
-			lazyLoad: true,
+			lazyLoad: 2,
 			pageDots: false,
 			adaptiveHeight: true,
 			selectedAttraction: 0.15,
@@ -136,8 +136,8 @@ $(document).ready(function() {
 			var thisRoomsSlider = el.flickity({
 				contain: true,
 				imagesLoaded: true,
+				lazyLoad: 2,
 				prevNextButtons: false,
-				lazyLoad: true,
 				pageDots: false,
 				adaptiveHeight: true
 			});
@@ -189,7 +189,7 @@ $(document).ready(function() {
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
-				lazyLoad: 1,
+				lazyLoad: 2,
 				pageDots: false,
 				autoPlay: true,
 				prevNextButtons: false,
@@ -357,7 +357,7 @@ $(window).on('scroll', function () {
 			function initMap() {
 				var latLng= {};
 				latLng.lat = 55.683998;
-				if (windowWidth < 740) {
+				if ($(window).width() < 740) {
 					latLng.lng = 37.578508;
 				} else {
 					latLng.lng = 37.574309;

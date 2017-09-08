@@ -14,7 +14,7 @@ $this->setFrameMode(true);
 ?>
 
 <? if (!empty($arResult["ITEMS"])) : ?>
-	<div class="trainers__slider">
+	<div class="trainers__slider fade-top">
 		<?foreach($arResult["ITEMS"] as $arItem):?>
 			<?
 			$img = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"], array("width" => 310, "height" => 275), BX_RESIZE_IMAGE_EXACT, true);
