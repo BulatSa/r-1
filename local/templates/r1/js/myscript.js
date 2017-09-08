@@ -180,6 +180,7 @@ $(document).ready(function() {
 				groupCells: true,
 				lazyLoad: 2,
 				pageDots: false,
+				autoPlay: true,
 				prevNextButtons: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
@@ -190,6 +191,8 @@ $(document).ready(function() {
 				groupCells: true,
 				lazyLoad: 1,
 				pageDots: false,
+				autoPlay: true,
+				prevNextButtons: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		}
