@@ -903,7 +903,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 				</div>
 			</div>
 			<div id="googlemap"></div>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQfEu_8-pHG14T3d1VrAhof5J4UWKe7PE" async defer>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQfEu_8-pHG14T3d1VrAhof5J4UWKe7PE" async>
 			</script>
 			
 		</div>

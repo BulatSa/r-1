@@ -321,6 +321,11 @@ $(window).on('scroll', function () {
 /**************************************************
   FancyBox
 ***************************************************/
+	$('.training__item').on('click', function(){
+		$('.training__item').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	$(".training__item[data-fancybox]").fancybox({
 		animationEffect : "zoom",
 		lang : 'ru',
@@ -337,7 +342,8 @@ $(window).on('scroll', function () {
 			}
 		},
 		beforeLoad: function(instance, current) {
-			var $thisLinkSrc = instance.$lastFocus;
+			console.log(instance, current);
+			var $thisLinkSrc = $('.training__item.active');
 			var $thisItemModal = $('#training-item-more .training__item-more');
 			var $thisItemModalInfo = $thisItemModal.find('.training__item-more-info');
 			var $thisItemModalForm = $thisItemModal.find('form');
@@ -346,6 +352,9 @@ $(window).on('scroll', function () {
 			$thisItemModalInfo.append($thisLinkSrc.children().clone());
 
 			$thisItemModalForm.find('[name=learn-class]').attr('value', $thisItemModalInfo.find('.training__item-title').text());
+		},
+		beforeClose: function () {
+			$('.training__item.active').removeClass('active');
 		}
 	});
 /**************************************************
