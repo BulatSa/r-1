@@ -47,6 +47,7 @@ $(document).ready(function() {
 				lazyLoad: 2,
 				prevNextButtons: false,
 				adaptiveHeight: true,
+				dragThreshold: 20,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		} else {
@@ -56,6 +57,7 @@ $(document).ready(function() {
 				groupCells: true,
 				lazyLoad: 2,
 				adaptiveHeight: true,
+				dragThreshold: 20,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		}
@@ -72,6 +74,7 @@ $(document).ready(function() {
 				pageDots: false,
 				prevNextButtons: false,
 				adaptiveHeight: true,
+				dragThreshold: 20,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		} else {
@@ -82,6 +85,7 @@ $(document).ready(function() {
 				lazyLoad: 2,
 				pageDots: false,
 				adaptiveHeight: true,
+				dragThreshold: 20,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
 		}
@@ -95,6 +99,7 @@ $(document).ready(function() {
 			lazyLoad: 2,
 			pageDots: false,
 			adaptiveHeight: true,
+			dragThreshold: 20,
 			selectedAttraction: 0.15,
 			friction: 0.8
 		});
@@ -139,6 +144,7 @@ $(document).ready(function() {
 				lazyLoad: 2,
 				prevNextButtons: false,
 				pageDots: false,
+				dragThreshold: 20,
 				adaptiveHeight: true
 			});
 
@@ -181,6 +187,7 @@ $(document).ready(function() {
 				lazyLoad: 2,
 				pageDots: false,
 				autoPlay: true,
+				dragThreshold: 20,
 				prevNextButtons: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
@@ -192,6 +199,7 @@ $(document).ready(function() {
 				lazyLoad: 2,
 				pageDots: false,
 				autoPlay: true,
+				dragThreshold: 20,
 				prevNextButtons: false,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});

@@ -4,7 +4,7 @@
 			<form class="ajax-form">
 				<input type="text" class="input-text" placeholder="Ваше имя" data-req="true">
 				<input type="tel" class="input-text" placeholder="Ваш телефон" data-req="true">
-				<input type="hidden" value="пробное занятие" name="form_subject">
+				<input type="hidden" value="Пробное занятие" name="form_subject">
 				<button class="btn btn--full">Записаться на пробное занятие</button>
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
@@ -20,7 +20,7 @@
 			<form class="ajax-form">
 				<input type="text" class="input-text" placeholder="Ваше имя" data-req="true">
 				<input type="tel" class="input-text" placeholder="Ваш телефон" data-req="true">
-				<input type="hidden" value="пробное занятие" name="form_subject">
+				<input type="hidden" value="Обратный звонок" name="form_subject">
 				<button class="btn btn--full">Отправить</button>
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_agree" value="yes" data-label="Пользователь согласился с условиями" data-req="true" checked>
