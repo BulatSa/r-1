@@ -6,6 +6,10 @@
 	padding-bottom: 15px;
 	z-index: 2;
 	.trans-stnd();
+	@media @tablet {
+		padding-top: 6px;
+		padding-bottom: 10px;
+	}
 	@media @phone {
 		padding-top: 5px;
 		padding-bottom: 10px;
@@ -54,11 +58,7 @@
 	justify-content: flex-start;
 	.trans-stnd();
 	img {
-		max-width: 35%;
-		.trans-stnd();
 		@media @tabvert {
-			max-width: 100%;
-			width: auto;
 			max-height: 75px;
 		}
 		@media @phone {
@@ -105,6 +105,9 @@
 		color: #FFF;
 		@media @tablet {
 			font-size: 16px;
+		}
+		@media @tabvert {
+			font-size: 14px;
 		}
 		&:hover {
 			color: @red;

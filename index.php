@@ -7,13 +7,12 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 	<div class="wrapper">
 		<div class="header">
 			<div class="row row--center">
-				<div class="grid-3 grid-tabvert-1 grid-phone-3">
+				<div class="grid-3 grid-tabvert-2 grid-phone-5">
 					<div class="header__logo">
 						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/logo-top.png" alt="">
-						<span>Академеия cмешанных и ударных единоборств России</span>
 					</div>
 				</div>
-				<div class="grid-7 grid-tabvert-8 header__nav-wrap">
+				<div class="grid-7 grid-tabvert-7 header__nav-wrap">
 					<ul class="header__nav">
 						<li><a href="#trainers" class="scrollto">Тренеры</a></li>
 						<li><a href="#facts" class="scrollto">Преимущества</a></li>
@@ -22,7 +21,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 						<li><a href="#contact" class="scrollto">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="grid-2 grid-tabvert-3 grid-phone-9">
+				<div class="grid-2 grid-tabvert-3 grid-phone-7">
 					<div class="header__call">
 						<a href="tel:84951323661" class="header__call-phone">+7 (495) 132-36-61</a><br>
 						<a href="#call-back" class="btn btn--white btn--mini" data-fancybox>ОБРАТНЫЙ ЗВОНОК</a>

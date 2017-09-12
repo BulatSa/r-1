@@ -107,17 +107,20 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 25%;
-	padding-left: 8px;
-	padding-right: 8px;
+	width: ~"calc(25% - 16px)";
+	margin-left: 8px;
+	margin-right: 8px;
+	background: #fff;
 	@media @tablet{
-		width: calc(100% / 3);
+		width: ~"calc(100% / 3 - 16px)";
 	}
 	@media @tabvert{
-		width: 50%;
+		width: ~"calc(50% - 16px)";
 	}
 	@media @phone-mini{
 		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
@@ -143,7 +146,6 @@
 
 .trainers__slide-info {
 	min-height: 280px;
-	height: 100%;
 	padding-left: 7%;
 	padding-right: 7%;
 	padding-bottom: 15px;

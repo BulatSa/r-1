@@ -39,14 +39,37 @@ $(document).ready(function() {
 ***************************************************/
 	if ($('.trainers__slider').length) {
 		var trainersCount = $('.trainers__slider .trainers__slide').length;
+		var trainersSlide = $('.trainers__slider .trainers__slide');
+		function setTrainersSlideHeight() {
+			var trainersSlideHeight = 0;
+			if ($(window).width() > 420) {
+				trainersSlide.css('height', 'auto');
+				trainersSlide.each(function () {
+					if (trainersSlideHeight < $(this).outerHeight()) {
+						trainersSlideHeight = $(this).outerHeight();
+					}
+				});
+				trainersSlide.height(trainersSlideHeight);
+			} else {
+				trainersSlide.css('height', 'auto');
+			}
+		}
+
+		setTrainersSlideHeight();
+		$(window).on('resize', function () {
+			setTimeout(function(){
+				setTrainersSlideHeight();
+			}, 1000);
+		});
+		
 		if ($(window).width() > 1024 && trainersCount < 5) {
 			$('.trainers__slider').flickity({
 				contain: true,
 				imagesLoaded: true,
 				groupCells: true,
 				lazyLoad: 2,
-				prevNextButtons: false,
 				adaptiveHeight: true,
+				prevNextButtons: false,
 				dragThreshold: 20,
 				arrowShape: "M100 31.05H8.28l27.29-27.3L31.82 0 0 31.82l1.88 1.88L0 35.57 31.82 67.4l3.75-3.75-27.29-27.3H100v-5"
 			});
