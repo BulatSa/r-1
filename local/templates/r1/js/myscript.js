@@ -487,6 +487,12 @@ $(window).on('scroll', function () {
 					$.fancybox.open({src  : '#modal-thanks'});
 					setTimeout(function() {$.fancybox.close();},4500);
 					form[0].reset();
+					ga('send', {
+						hitType: 'event',
+						eventCategory: 'formsending',
+						eventAction: 'send',
+						eventLabel: 'form'
+					});
 				})
 			});
 		}
