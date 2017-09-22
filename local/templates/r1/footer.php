@@ -2,8 +2,8 @@
 		<div class="modal-form">
 			<p class="form-title">Запишитесь на пробное занятие сейчас</p>
 			<form class="ajax-form">
-				<input type="text" name="user_name" class="input-text" placeholder="Ваше имя" data-req="true">
-				<input type="tel" name="user_phone" class="input-text" placeholder="Ваш телефон" data-req="true">
+				<input type="text" name="user_name" data-label="Имя" class="input-text" placeholder="Ваше имя" data-req="true">
+				<input type="tel" name="user_phone" data-label="Телефон" class="input-text" placeholder="Ваш телефон" data-req="true">
 				<input type="hidden" value="Пробное занятие" name="form_subject">
 				<button class="btn btn--full">Записаться на пробное занятие</button>
 				<label class="style-checkbox">
@@ -18,8 +18,8 @@
 		<div class="modal-form">
 			<p class="form-title">Заказать обратный звонок</p>
 			<form class="ajax-form">
-				<input type="text" name="user_name" class="input-text" placeholder="Ваше имя" data-req="true">
-				<input type="tel" name="user_phone" class="input-text" placeholder="Ваш телефон" data-req="true">
+				<input type="text" name="user_name" data-label="Имя" class="input-text" placeholder="Ваше имя" data-req="true">
+				<input type="tel" name="user_phone" data-label="Телефон" class="input-text" placeholder="Ваш телефон" data-req="true">
 				<input type="hidden" value="Обратный звонок" name="form_subject">
 				<button class="btn btn--full">Отправить</button>
 				<label class="style-checkbox">
