@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			<div class="row row--center">
 				<div class="grid-3 grid-tabvert-2 grid-phone-5">
 					<div class="header__logo">
-						<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/logo-top.png" alt="">
+						<img src="<?=SITE_TEMPLATE_PATH?>/img/logo-top.png" alt="">
 					</div>
 				</div>
 				<div class="grid-7 grid-tabvert-7 header__nav-wrap">
@@ -86,7 +86,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 			</div>
 			<div class="trainers__facts">
 				<div class="trainers__fact fade-top">
-					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-ring.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -95,7 +95,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact fade-top">
-					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-glove.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -104,7 +104,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact fade-top">
-					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-box-man.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",
@@ -113,7 +113,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					</span>
 				</div>
 				<div class="trainers__fact fade-top">
-					<img src="" data-src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/icons/icon-prizes-3.png" alt="">
 					<span>
 						<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
 							"AREA_FILE_SHOW" => "file",

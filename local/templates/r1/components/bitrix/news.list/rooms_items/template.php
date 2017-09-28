@@ -63,7 +63,7 @@ $this->setFrameMode(true);
 							<p class="form-title">Запишитесь на пробное занятие сейчас</p>
 							<form class="ajax-form">
 								<input type="hidden" name="form_subject" value="Пробное занятие" data-label="Пробное занятие">
-								<input type="text" class="input-text input-text--half" placeholder="Ваш имя" data-label="Имя" name="Имя">
+								<input type="text" class="input-text input-text--half" placeholder="Ваше имя" data-label="Имя" name="Имя">
 								<input type="tel" class="input-text input-text--half" placeholder="Ваш телефон*" data-label="Телефон" data-req="true" name="Телефон">
 								<button class="btn btn--full btn--bordered">Записаться на пробное занятие</button>
 								<label class="style-checkbox">
