@@ -560,7 +560,7 @@ $APPLICATION->SetTitle("Академия смешанных и ударных е
 					<span>Детская комната</span>
 				</div>
 				<div class="about-facts__item fade-top" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/about-facts-item-8.jpg')">
-					<span>5 минут от метро Академическая</span>
+					<span>5 минут пешком от метро Академическая</span>
 				</div>
 			</div>
 		</div><!-- about-facts -->
